@@ -8,15 +8,15 @@ import java.util.Scanner;
 
 import storefront.entities.Location;
 
-public class LoactionService {
+public class LocationService {
 
-	private static LoactionService instance = null;
-	protected LoactionService() {
+	private static LocationService instance = null;
+	protected LocationService() {
 		// Exists only to defeat instantiation.
 	}
-	public static LoactionService getInstance() {
+	public static LocationService getInstance() {
 		if(instance == null) {
-			instance = new LoactionService();
+			instance = new LocationService();
 		}
 		return instance;
 	}
@@ -27,6 +27,10 @@ public class LoactionService {
 
 	public void addLocation(Location loc){
 		locationList.add(loc);
+	}
+	
+	public ArrayList<Location> getLocationList(){
+		return locationList;
 	}
 
 

@@ -1,0 +1,10 @@
+Coke,1.5
+T-Shirt,10
+Peanuts,1.5
+iTunes Gift Card,15
+Water,1
+Sunscreen,5
+Magic Cards,4
+Dog Treats,3
+Beer,4.5
+Reading Glasses,11

@@ -51,7 +51,7 @@ public class Main {
 	}
 
 	public void startSimulation(){
-		int desiredRounds = 5;
+		int desiredRounds = 1000;
 		for (int i = 0; i < desiredRounds; i++) {
 			System.out.println("start round " + i);
 			round(i);

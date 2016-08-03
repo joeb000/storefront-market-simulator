@@ -60,6 +60,26 @@ public class DBConnection {
 
 		commitAndClose();
 	}
+	
+	public void executeStatements(String[] sql) throws SQLException{
+		stmt = c.createStatement();
+
+		for (int i = 0; i < sql.length; i++) {
+			stmt.executeUpdate(sql[i]);
+		}
+		
+		commitAndClose();
+
+	}
+	
+	public void executeStatement(String sql) throws SQLException{
+		stmt = c.createStatement();
+
+		stmt.executeUpdate(sql);
+		
+		commitAndClose();
+
+	}
 
 	public void executeDBScripts(String aSQLScriptFilePath) throws IOException,SQLException {
 		try {

@@ -34,11 +34,8 @@ public class MachineService {
 			m.setCapacity(defaultMachineCapacity);
 			machineList.add(m);
 			locationService.addMachineIDToLocation(loc,machineIDCounter);
-//			for (Product p : loc.getProductList()){
-//				m.addProductUnits(p.getProductID(), 2);
-			machineIDCounter++;
 
-//			}
+			machineIDCounter++;
 			this.stockProducts(m);
 			System.out.println(m.toString());
 		}

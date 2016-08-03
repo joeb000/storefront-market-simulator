@@ -1,0 +1,25 @@
+CREATE TABLE customer (
+	c_id	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	fname	TEXT,
+	age	INTEGER,
+	gender	TEXT
+); 
+
+CREATE TABLE loc (
+	loc_id	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	loc_name	TEXT,
+	latitude	REAL,
+	longitude	REAL
+); 
+
+CREATE TABLE machine (
+	m_id	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	latitude	REAL,
+	longitude	INTEGER
+); 
+
+CREATE TABLE product (
+	p_id	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	p_name	TEXT,
+	price	REAL
+); 

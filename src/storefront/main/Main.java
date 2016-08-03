@@ -2,12 +2,15 @@ package storefront.main;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import storefront.entities.Customer;
 import storefront.entities.Location;
 import storefront.entities.Machine;
 import storefront.entities.Product;
+import storefront.helpers.DBConnection;
 import storefront.services.CustomerService;
 import storefront.services.LocationService;
 import storefront.services.MachineService;
@@ -27,6 +30,14 @@ public class Main {
 
 	public void initServices(){
 		try {
+			try {
+				//	DBConnection.getInstance().executeCreate();
+				//DBConnection.getInstance().executeInsert();
+				DBConnection.getInstance().executeDBScripts("sql/CreateTables.sql");
+			} catch (ClassNotFoundException | SQLException | IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			theProductService.readProductsFromFile(new File("input/Products.txt"));		
 			System.out.println(theProductService.getProductsByID(1));
 			theLocationService.readLocationsFromFile(new File("input/Locations.txt"));
@@ -74,7 +85,7 @@ public class Main {
 	}
 
 	public void recordTransaction(Customer c, Product p, Machine m, int round){
-		System.out.println("Customer: "+ c.getName() + " bought product: " + p.getProductName() + " from MachineID:" + m.getMachineID() + "at location: " + m.getMachineLocation().getLocationName() );
+		System.out.println("Customer: "+ c.getName() + " bought product: " + p.getProductName() + " from MachineID:" + m.getMachineID() + " at location: " + m.getMachineLocation().getLocationName() );
 	}
 
 }

@@ -48,9 +48,9 @@ public class ProductService {
 	private Product parseStringToProduct(String productString){
 		Product product = new Product();
 		String[] attributes = productString.split(",");
-		product.setProductID(productIDCounter);
-		product.setProductName(attributes[0]);
-		product.setPrice(Float.parseFloat(attributes[1]));
+		product.setProductID(Integer.parseInt(attributes[0]));
+		product.setProductName(attributes[1]);
+		product.setPrice(Float.parseFloat(attributes[2]));
 		System.out.println(product.toString());
 		return product;
 	}

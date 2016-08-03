@@ -1,13 +1,16 @@
 package storefront.entities;
 
+import java.util.ArrayList;
+
 public class Location {
 	
 	private int locationID;
 	private String locationName;
 	private double latitude;
 	private double longitude;
-	
-	
+	private ArrayList<Product> productList = new ArrayList<Product>();
+	private ArrayList<Integer> machineIDList = new ArrayList<Integer>();
+
 	public int getLocationID() {
 		return locationID;
 	}
@@ -32,11 +35,32 @@ public class Location {
 	public void setLongitude(double longitude) {
 		this.longitude = longitude;
 	}
+	
+	public ArrayList<Product> getProductList() {
+		return productList;
+	}
+	public void setProductList(ArrayList<Product> productList) {
+		this.productList = productList;
+	}
+	public void addProuduct(Product product){
+		productList.add(product);
+	}
+	public ArrayList<Integer> getMachineIDList() {
+		return machineIDList;
+	}
+
+	public void addMachineID(int mID){
+		machineIDList.add(mID);
+	}
 	@Override
 	public String toString() {
 		return "Location [locationID=" + locationID + ", locationName=" + locationName + ", latitude=" + latitude
-				+ ", longitude=" + longitude + "]";
+				+ ", longitude=" + longitude + ", productList=" + productList + ", machineIDList=" + machineIDList
+				+ "]";
 	}
+
+
+	
 	
 
 }

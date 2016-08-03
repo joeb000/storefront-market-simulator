@@ -8,8 +8,11 @@ public class Customer {
 	private String name;
 	private int age;
 	private String gender;
-	private ArrayList purchaseHistory;
 	private ArrayList<Product> preferences = new ArrayList<Product>();
+	private ArrayList<Location> locationList = new ArrayList<Location>();
+
+	
+	private int currentLocationID;
 	
 	public int getCustomerID() {
 		return customerID;
@@ -35,12 +38,6 @@ public class Customer {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public ArrayList getPurchaseHistory() {
-		return purchaseHistory;
-	}
-	public void setPurchaseHistory(ArrayList purchaseHistory) {
-		this.purchaseHistory = purchaseHistory;
-	}
 	public ArrayList<Product> getPreferences() {
 		return preferences;
 	}
@@ -50,12 +47,32 @@ public class Customer {
 	public void addProuductPreference(Product product){
 		preferences.add(product);
 	}
-
+	
+	public int getCurrentLocationID() {
+		return currentLocationID;
+	}
+	public void setCurrentLocationID(int currentLocationID) {
+		this.currentLocationID = currentLocationID;
+	}
+	
+	
+	public ArrayList<Location> getLocationList() {
+		return locationList;
+	}
+	public void setLocationList(ArrayList<Location> locationList) {
+		this.locationList = locationList;
+	}
+	
+	public void addLocationPreference(Location loc){
+		locationList.add(loc);
+	}
 	@Override
 	public String toString() {
 		return "Customer [customerID=" + customerID + ", name=" + name + ", age=" + age + ", gender=" + gender
-				+ ", purchaseHistory=" + purchaseHistory + ", preferences=" + preferences + "]";
+				+ ", preferences=" + preferences + ", locationList="
+				+ locationList + ", currentLocationID=" + currentLocationID + "]";
 	}
+	
 	
 
 }

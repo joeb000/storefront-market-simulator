@@ -3,9 +3,11 @@ package storefront.services;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+import storefront.dao.ProductDAO;
 import storefront.entities.Product;
 
 public class ProductService {
@@ -21,28 +23,15 @@ public class ProductService {
 		return instance;
 	}
 
-	public int productIDCounter = 1;
-
-	private HashMap<Integer,Product> productsMap = new HashMap<Integer,Product>();
+	private ProductDAO dao = new ProductDAO();
 	
-	public Product getProductsByID(int id){
-		return productsMap.get(id);
-	}
-	
-	public void addProduct(int id, Product p){
-		productsMap.put(id, p);
-	}
-	
-	
-	public HashMap<Integer,Product> readProductsFromFile(File file) throws FileNotFoundException{
+	public void readProductsFromFile(File file) throws FileNotFoundException{
 		Scanner in = new Scanner(new FileReader(file));
 		while (in.hasNext()){
 			String line = in.nextLine();
-			addProduct(productIDCounter,parseStringToProduct(line));
-			productIDCounter++;
+			Product aProduct = parseStringToProduct(line);
+			System.out.println("Product ID: #"+commitNewProduct(aProduct)+" added to DB");
 		}
-
-		return productsMap;
 	}
 
 	private Product parseStringToProduct(String productString){
@@ -53,6 +42,19 @@ public class ProductService {
 		product.setPrice(Float.parseFloat(attributes[2]));
 		System.out.println(product.toString());
 		return product;
+	}
+	
+	public int commitNewProduct(Product p){
+		return dao.insertNewProduct(p.getProductName(), p.getPrice());
+	}
+	
+	public ArrayList<Product> readDBToProductList(){
+		ArrayList<Product> productList = new ArrayList<Product>();
+		
+		//TODO
+		
+		
+		return productList;
 	}
 	
 	

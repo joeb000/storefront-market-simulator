@@ -1,5 +1,5 @@
 package storefront.dao;
 
-public class MachineDAO {
+public class SimulatorDAO {
 
 }

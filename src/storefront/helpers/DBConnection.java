@@ -5,6 +5,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -14,8 +16,7 @@ public class DBConnection {
 
 	public DBConnection() throws ClassNotFoundException, SQLException{
 		Class.forName("org.sqlite.JDBC");
-		c = DriverManager.getConnection("jdbc:sqlite:test.db");
-		stmt = c.createStatement();
+		c = DriverManager.getConnection("jdbc:sqlite:storefront.db");
 	}
 
 	private static DBConnection instance = null;
@@ -26,41 +27,6 @@ public class DBConnection {
 		return instance;
 	}
 
-	public void executeCreate() throws SQLException{
-		stmt = c.createStatement();
-		String sql = "CREATE TABLE COMPANY " +
-				"(ID INT PRIMARY KEY     NOT NULL," +
-				" NAME           TEXT    NOT NULL, " + 
-				" AGE            INT     NOT NULL, " + 
-				" ADDRESS        CHAR(50), " + 
-				" SALARY         REAL)"; 
-		stmt.executeUpdate(sql);
-
-		commitAndClose();
-	}
-
-
-	public void executeInsert() throws SQLException{
-		stmt = c.createStatement();
-		String sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-				"VALUES (1, 'Paul', 32, 'California', 20000.00 );"; 
-		stmt.executeUpdate(sql);
-
-		sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-				"VALUES (2, 'Allen', 25, 'Texas', 15000.00 );"; 
-		stmt.executeUpdate(sql);
-
-		sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-				"VALUES (3, 'Teddy', 23, 'Norway', 20000.00 );"; 
-		stmt.executeUpdate(sql);
-
-		sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
-				"VALUES (4, 'Mark', 25, 'Rich-Mond ', 65000.00 );"; 
-		stmt.executeUpdate(sql);
-
-		commitAndClose();
-	}
-	
 	public void executeStatements(String[] sql) throws SQLException{
 		stmt = c.createStatement();
 
@@ -68,21 +34,35 @@ public class DBConnection {
 			stmt.executeUpdate(sql[i]);
 		}
 		
-		commitAndClose();
+	}
+	
+	public int executeAutoIncrementingStatement(String sql) throws SQLException{
+	    PreparedStatement statement = null;
 
+	    statement = c.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+	    statement.executeUpdate();
+	    ResultSet rs = stmt.getGeneratedKeys();
+	    rs.next();
+	    int i = rs.getInt(1);
+		return i;
+	}
+	
+	public ResultSet executeSelectStatement(String sql) throws SQLException{
+		stmt = c.createStatement();
+	    ResultSet rs = stmt.executeQuery(sql);
+		return rs;
 	}
 	
 	public void executeStatement(String sql) throws SQLException{
 		stmt = c.createStatement();
 
 		stmt.executeUpdate(sql);
-		
-		commitAndClose();
-
+	 
 	}
 
 	public void executeDBScripts(String aSQLScriptFilePath) throws IOException,SQLException {
 		try {
+			stmt = c.createStatement();
 			BufferedReader in = new BufferedReader(new FileReader(aSQLScriptFilePath));
 			String str;
 			StringBuffer sb = new StringBuffer();
@@ -95,10 +75,9 @@ public class DBConnection {
 			System.err.println("Failed to Execute " + aSQLScriptFilePath +". The error is "+ e.getMessage());
 			e.printStackTrace();
 		} 
-		commitAndClose();
 	}
 
-	void commitAndClose() throws SQLException{
+	public void commitAndClose() throws SQLException{
 		stmt.close();
 		//c.commit();
 		c.close();

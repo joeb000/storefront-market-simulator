@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import storefront.dao.LocationDAO;
+import storefront.entities.Customer;
 import storefront.entities.Location;
 
 public class LocationService {
@@ -70,5 +71,8 @@ public class LocationService {
 	public int commitNewLocation(Location l){
 		return dao.insertNewLocation(l.getLocationName(),l.getLatitude(),l.getLongitude());
 	}
-
+	
+	public ArrayList<Location> retrieveAllLocations() {
+		return dao.readAllLocationsFromDB();
+	}
 }

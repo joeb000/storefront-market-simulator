@@ -1,6 +1,5 @@
 package storefront.entities;
 
-import java.util.ArrayList;
 
 public class Customer {
 	
@@ -8,9 +7,18 @@ public class Customer {
 	private String name;
 	private int age;
 	private String gender;
-	private ArrayList<Product> preferences = new ArrayList<Product>();
-	private ArrayList<Location> locationList = new ArrayList<Location>();
+	private int[] products;
+	private int[] locations = {0,0,0,0,0,0};
 
+	
+	public Customer(int cID){
+		customerID=cID;
+	}
+	
+	public Customer(){
+
+	}
+	
 	
 	private int currentLocationID;
 	
@@ -38,15 +46,7 @@ public class Customer {
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public ArrayList<Product> getPreferences() {
-		return preferences;
-	}
-	public void setPreferences(ArrayList<Product> preferences) {
-		this.preferences = preferences;
-	}
-	public void addProuductPreference(Product product){
-		preferences.add(product);
-	}
+
 	
 	public int getCurrentLocationID() {
 		return currentLocationID;
@@ -54,23 +54,24 @@ public class Customer {
 	public void setCurrentLocationID(int currentLocationID) {
 		this.currentLocationID = currentLocationID;
 	}
-	
-	
-	public ArrayList<Location> getLocationList() {
-		return locationList;
+	public int[] getProducts() {
+		return products;
 	}
-	public void setLocationList(ArrayList<Location> locationList) {
-		this.locationList = locationList;
+	public void addProduct(int pID) {
+		products[products.length] = pID;
 	}
 	
-	public void addLocationPreference(Location loc){
-		locationList.add(loc);
+	public int[] getLocations() {
+		return locations;
 	}
-	@Override
-	public String toString() {
-		return "Customer [customerID=" + customerID + ", name=" + name + ", age=" + age + ", gender=" + gender
-				+ ", preferences=" + preferences + ", locationList="
-				+ locationList + ", currentLocationID=" + currentLocationID + "]";
+	
+	public void addLocation(int locID) {
+		for (int i = 0; i < locations.length; i++) {
+			if (locations[i]==0){
+				locations[i]=locID;
+				break;
+			}
+		}
 	}
 	
 	

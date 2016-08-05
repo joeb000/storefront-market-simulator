@@ -74,18 +74,36 @@ public class CustomerDAO {
 
 	public ArrayList<Customer> readAllCustomersFromDB(){
 		ArrayList<Customer> customerList = new ArrayList<Customer>();
-		String sql = "SELECT * FROM " + TABLE_CUSTOMER;
+		String sql = "select * from " + TABLE_CUSTOMER;
 		ResultSet rs = null;
+
 		try {
 			rs = DBConnection.getInstance().executeSelectStatement(sql);
 			while (rs.next()) {
 				Customer cust = new Customer();
+
 				cust.setCustomerID(rs.getInt("customer_id"));
 				cust.setName(rs.getString("fname"));
 				cust.setAge(rs.getInt("age"));
 				cust.setGender(rs.getString("gender"));
 				customerList.add(cust);
 				System.out.println("CUSTOMER RETRIEVED:"+cust);
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		
+		sql = "select * from " + TABLE_CUSTOMER_LOCATION;
+		rs = null;
+
+		try {
+			rs = DBConnection.getInstance().executeSelectStatement(sql);
+			while (rs.next()) {
+				int cid = rs.getInt("customer_id");
+				int lid = rs.getInt("loc_id");
+				customerList.get(cid-1).addLocation(lid);
+				
+				System.out.println("CUSTOMER RETRIEVED:"+customerList.get(cid-1));
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();

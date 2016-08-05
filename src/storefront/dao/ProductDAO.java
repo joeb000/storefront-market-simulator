@@ -1,7 +1,10 @@
 package storefront.dao;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
+import storefront.entities.Product;
 import storefront.helpers.DBConnection;
 
 public class ProductDAO {
@@ -49,6 +52,27 @@ public class ProductDAO {
 			e.printStackTrace();
 		}
 
+	}
+	
+	public ArrayList<Product> readAllProductsFromDB(){
+		ArrayList<Product> prodList = new ArrayList<Product>();
+		String sql = "SELECT * FROM " + TABLE_PRODUCT;
+		ResultSet rs = null;
+		try {
+			rs = DBConnection.getInstance().executeSelectStatement(sql);
+			while (rs.next()) {
+				Product prod = new Product();
+				prod.setProductID(rs.getInt("product_id"));
+				prod.setProductName(rs.getString("product_name"));
+				prod.setPrice(rs.getFloat("price"));
+				prodList.add(prod);
+				System.out.println("PRODUCT RETRIEVED:"+prod);
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return prodList;
 	}
 
 }

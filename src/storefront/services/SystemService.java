@@ -24,4 +24,7 @@ public class SystemService {
 	public int commitPurchase(Customer c, Product p, Location l, int dateStamp){
 		return dao.insertNewPurchase(dateStamp, p.getProductID(), l.getLocationID(), p.getPrice(), c.getCustomerID());
 	}
+	public int commitRequest(Customer c, Product p, Location l, int dateStamp){
+		return dao.insertNewRequest(dateStamp, p.getProductID(), l.getLocationID(), c.getCustomerID());
+	}
 }

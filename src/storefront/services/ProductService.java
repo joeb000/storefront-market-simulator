@@ -8,10 +8,11 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 import storefront.dao.ProductDAO;
+import storefront.entities.Customer;
 import storefront.entities.Product;
 
 public class ProductService {
-	
+
 	private static ProductService instance = null;
 	protected ProductService() {
 		// Exists only to defeat instantiation.
@@ -24,7 +25,7 @@ public class ProductService {
 	}
 
 	private ProductDAO dao = new ProductDAO();
-	
+
 	public void readProductsFromFile(File file) throws FileNotFoundException{
 		Scanner in = new Scanner(new FileReader(file));
 		while (in.hasNext()){
@@ -43,20 +44,21 @@ public class ProductService {
 		System.out.println(product.toString());
 		return product;
 	}
-	
+
 	public int commitNewProduct(Product p){
 		return dao.insertNewProduct(p.getProductName(), p.getPrice());
 	}
-	
-	public ArrayList<Product> readDBToProductList(){
+
+	public ArrayList<Product> retrieveAllProducts() {
 		ArrayList<Product> productList = new ArrayList<Product>();
-		
+
 		//TODO
-		
-		
+		productList = dao.readAllProductsFromDB();
+
+
 		return productList;
 	}
-	
-	
+
+
 
 }

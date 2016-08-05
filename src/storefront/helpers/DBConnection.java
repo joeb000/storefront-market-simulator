@@ -53,6 +53,12 @@ public class DBConnection {
 		return rs;
 	}
 	
+	public int executeSingleValueStatement(String sql) throws SQLException{
+		stmt = c.createStatement();
+	    ResultSet rs = stmt.executeQuery(sql);
+	    return rs.getInt(0);
+	}
+	
 	public void executeStatement(String sql) throws SQLException{
 		stmt = c.createStatement();
 

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import storefront.entities.Customer;
 import storefront.entities.Location;
@@ -19,9 +20,14 @@ public class Main {
 	CustomerService theCustomerService = CustomerService.getInstance();
 	LocationService theLocationService = LocationService.getInstance();
 
+	ArrayList<Product> productList = new ArrayList<Product>();
+	ArrayList<Customer> customerList = new ArrayList<Customer>();
+	ArrayList<Location> locationList = new ArrayList<Location>();
+
 	public static void main(String[] args) throws FileNotFoundException {
 		Main theMain = new Main();
 		theMain.initServices();
+		theMain.loadTables();
 
 		theMain.startSimulation();
 	}
@@ -44,6 +50,13 @@ public class Main {
 			e.printStackTrace();
 		}
 	}
+	
+	public void loadTables(){
+			productList = theProductService.retrieveAllProducts();		
+			customerList = theCustomerService.retrieveAllCustomers();
+			locationList = theLocationService.retrieveAllLocations();
+	}
+
 
 
 	public void startSimulation(){
@@ -55,22 +68,13 @@ public class Main {
 	}
 
 	public void round(int iter){
+		
 
 		theCustomerService.randomlyAssignCustomerLocation(theCustomerService.retrieveAllCustomers());
 
-		for (Customer customer: theCustomerService.retrieveAllCustomers()){
+		for (Customer customer: customerList){
 
 			System.out.println("*******" + customer.getName());
-			for (Product custProduct : customer.getPreferences()){
-				Location customerLocation = theLocationService.getLocationByID(customer.getCurrentLocationID());
-				for (Product p :customerLocation.getProductList()){
-					if (custProduct.getProductID() == p.getProductID()){
-						recordTransaction(customer,custProduct,customerLocation,iter);
-					}
-				}
-
-
-			}
 
 		}
 	}

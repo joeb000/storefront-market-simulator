@@ -7,7 +7,7 @@ public class Customer {
 	private String name;
 	private int age;
 	private String gender;
-	private int[] products;
+	private int[] products = {0,0,0,0,0,0};
 	private int[] locations = {0,0,0,0,0,0};
 
 	

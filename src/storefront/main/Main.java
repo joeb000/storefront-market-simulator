@@ -30,14 +30,14 @@ public class Main {
 		theMain.initServices();
 		theMain.loadTables();
 
-		theMain.startSimulation();
+		//theMain.startSimulation();
 	}
 
 	public void initServices(){
 		if (new File("storefront.db").delete()){
 
 			try {
-				DBConnection.getInstance().executeDBScripts("sql/CreateTables.sql");
+				DBConnection.getInstance().executeDBScripts("sql/CreateTables2.sql");
 			} catch (ClassNotFoundException | SQLException | IOException e) {
 				e.printStackTrace();
 			}
@@ -46,7 +46,7 @@ public class Main {
 			theSimService.readProductsFromFile(new File("input/Products.txt"));		
 			theSimService.readMachinesFromFile(new File("input/Machines.txt"));
 			theSimService.readCustomersFromFile(new File("input/Customers.txt"));
-			theSimService.readCustomersFromFile(new File("input/Areas.txt"));
+			theSimService.readAreasFromFile(new File("input/Areas.txt"));
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -58,7 +58,6 @@ public class Main {
 			customerList = theSystemService.retrieveAllCustomers();
 			machineList = theSystemService.retrieveAllMachines();
 			areaList = theSystemService.retrieveAllAreas();
-
 	}
 
 

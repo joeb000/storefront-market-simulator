@@ -9,15 +9,14 @@ import storefront.helpers.DBConnection;
 
 public class MachineDAO {
 
-	public static String TABLE_LOCATION = "loc";
-	public static String TABLE_CUSTOMER_PRODUCT = "customer_product";
+	public static String TABLE_MACHINE = "machine";
 
 	public int insertNewMachine(String name, double lat, double lon){
 		int retval=0;
 
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO ");
-		sb.append(TABLE_LOCATION);
+		sb.append(TABLE_MACHINE);
 		sb.append(" (loc_name, latitude, longitude) ");
 
 		sb.append(" VALUES (");
@@ -36,25 +35,25 @@ public class MachineDAO {
 	}
 	
 	public ArrayList<Machine> readAllMachinesFromDB(){
-		ArrayList<Machine> locList = new ArrayList<Machine>();
-		String sql = "SELECT * FROM " + TABLE_LOCATION;
+		ArrayList<Machine> machineList = new ArrayList<Machine>();
+		String sql = "SELECT * FROM " + TABLE_MACHINE;
 		ResultSet rs = null;
 		try {
 			rs = DBConnection.getInstance().executeSelectStatement(sql);
 			while (rs.next()) {
-				Machine loc = new Machine();
-				loc.setMachineID(rs.getInt("loc_id"));
-				loc.setMachineName(rs.getString("loc_name"));
-				loc.setLatitude(rs.getDouble("latitude"));
-				loc.setLatitude(rs.getDouble("longitude"));
-				locList.add(loc);
-				System.out.println("LOCATION RETRIEVED:"+loc);
+				Machine machine = new Machine();
+				machine.setMachineID(rs.getInt("machine_id"));
+				machine.setMachineName(rs.getString("loc_name"));
+				machine.setLatitude(rs.getDouble("latitude"));
+				machine.setLatitude(rs.getDouble("longitude"));
+				machineList.add(machine);
+				System.out.println("MACHINE RETRIEVED:"+machine);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
 		
-		return locList;
+		return machineList;
 	}
 
 

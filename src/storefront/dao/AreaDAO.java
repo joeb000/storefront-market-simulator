@@ -16,7 +16,7 @@ public class AreaDAO {
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO ");
 		sb.append(TABLE_AREA);
-		sb.append(" (name) ");
+		sb.append(" (area_name) ");
 
 		sb.append(" VALUES (");
 

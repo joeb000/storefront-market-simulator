@@ -34,15 +34,17 @@ public class CustomerDAO {
 		return retval;
 	}
 
-	public void insertCustomerProductRelation(int customerID, int productID){			
+	public void insertCustomerProductRelation(int customerID, int productID, int probability){			
 		StringBuilder sb = new StringBuilder();
+
 		sb.append("INSERT INTO ");
 		sb.append(TABLE_CUSTOMER_PRODUCT);
-		sb.append(" (customer_id, product_id) ");
+		sb.append(" (customer_id, product_id, probability) ");
 
 		sb.append(" VALUES (");
 		sb.append(customerID + ", ");
-		sb.append(productID + "); ");
+		sb.append(productID + ", ");
+		sb.append(probability + "); ");
 
 		try {
 			DBConnection.getInstance().executeStatement(sb.toString());

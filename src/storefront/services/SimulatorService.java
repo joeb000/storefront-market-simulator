@@ -7,9 +7,11 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
+import storefront.dao.AreaDAO;
 import storefront.dao.CustomerDAO;
 import storefront.dao.MachineDAO;
 import storefront.dao.ProductDAO;
+import storefront.entities.Area;
 import storefront.entities.Customer;
 import storefront.entities.Machine;
 import storefront.entities.Product;
@@ -31,6 +33,7 @@ public class SimulatorService {
 	private ProductDAO pdao = new ProductDAO();
 	private MachineDAO mdao = new MachineDAO();
 	private CustomerDAO cdao = new CustomerDAO();
+	private AreaDAO adao = new AreaDAO();
 
 	
 	
@@ -132,7 +135,7 @@ public class SimulatorService {
 		System.out.println("CustID: "+ customerid + " assigned to " + customer.getName());
 
 		for (int i = 0; i < products.length; i++) {
-			commitCustomerProductRelation(customerid,Integer.parseInt(products[i]));
+			commitCustomerProductRelation(customerid,Integer.parseInt(products[i]),50);
 		}
 	}
 	
@@ -150,9 +153,38 @@ public class SimulatorService {
 	public int commitNewCustomer(Customer c){
 		return cdao.insertNewCustomer(c.getName(), c.getAge(),c.getGender());
 	}
-	public void commitCustomerProductRelation(int cID, int pID){
-		cdao.insertCustomerProductRelation(cID, pID);
+	public void commitCustomerProductRelation(int cID, int pID, int probability){
+		cdao.insertCustomerProductRelation(cID, pID, probability);
 	}
 	
+	/*
+	 * AREA
+	 * 
+	 */
+	
+	public void readAreasFromFile(File file) throws FileNotFoundException{
+		Scanner in = new Scanner(new FileReader(file));
+		while (in.hasNext()){
+			String line = in.nextLine();
+			parseStringToArea(line);
+		}
+	}
+	
+	private void parseStringToArea(String customerString){
+		Area area = new Area();
+		String[] attributes = customerString.split(",");
+
+		area.setName(attributes[1]);
+
+		int areaID = commitNewArea(area);
+		area.setAreaID(areaID);
+
+		System.out.println("Area: "+ areaID + " created: " + area.getName());
+
+	}
+	
+	public int commitNewArea(Area a){
+		return adao.insertNewArea(a.getName());
+	}
 	
 }

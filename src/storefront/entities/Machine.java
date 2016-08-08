@@ -2,26 +2,26 @@ package storefront.entities;
 
 import java.util.ArrayList;
 
-public class Location {
+public class Machine {
 	
-	private int locationID;
-	private String locationName;
+	private int machineID;
+	private String machineName;
 	private double latitude;
 	private double longitude;
 	private ArrayList<Product> productList = new ArrayList<Product>();
 	private ArrayList<Integer> machineIDList = new ArrayList<Integer>();
 
-	public int getLocationID() {
-		return locationID;
+	public int getMachineID() {
+		return machineID;
 	}
-	public void setLocationID(int locationID) {
-		this.locationID = locationID;
+	public void setMachineID(int machineID) {
+		this.machineID = machineID;
 	}
-	public String getLocationName() {
-		return locationName;
+	public String getMachineName() {
+		return machineName;
 	}
-	public void setLocationName(String locationName) {
-		this.locationName = locationName;
+	public void setMachineName(String machineName) {
+		this.machineName = machineName;
 	}
 	public double getLatitude() {
 		return latitude;
@@ -54,7 +54,7 @@ public class Location {
 	}
 	@Override
 	public String toString() {
-		return "Location [locationID=" + locationID + ", locationName=" + locationName + ", latitude=" + latitude
+		return "Machine [machineID=" + machineID + ", machineName=" + machineName + ", latitude=" + latitude
 				+ ", longitude=" + longitude + ", productList=" + productList + ", machineIDList=" + machineIDList
 				+ "]";
 	}

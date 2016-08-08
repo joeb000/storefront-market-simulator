@@ -2,7 +2,7 @@ package storefront.services;
 
 import storefront.dao.SystemDAO;
 import storefront.entities.Customer;
-import storefront.entities.Location;
+import storefront.entities.Machine;
 import storefront.entities.Product;
 
 public class SystemService {
@@ -21,10 +21,10 @@ public class SystemService {
 	SystemDAO dao = new SystemDAO();
 	
 	
-	public int commitPurchase(Customer c, Product p, Location l, int dateStamp){
-		return dao.insertNewPurchase(dateStamp, p.getProductID(), l.getLocationID(), p.getPrice(), c.getCustomerID());
+	public int commitPurchase(Customer c, Product p, Machine l, int dateStamp){
+		return dao.insertNewPurchase(dateStamp, p.getProductID(), l.getMachineID(), p.getPrice(), c.getCustomerID());
 	}
-	public int commitRequest(Customer c, Product p, Location l, int dateStamp){
-		return dao.insertNewRequest(dateStamp, p.getProductID(), l.getLocationID(), c.getCustomerID());
+	public int commitRequest(Customer c, Product p, Machine l, int dateStamp){
+		return dao.insertNewRequest(dateStamp, p.getProductID(), l.getMachineID(), c.getCustomerID());
 	}
 }

@@ -40,7 +40,8 @@ public class CustomerService {
 		String[] split = customerString.split("\"");
 		String[] attributes = split[0].split(",");
 		String[] products = split[1].split(",");
-		String[] locations = split[3].split(",");
+		//TODO 
+		String[] machines = split[3].split(",");
 
 		customer.setName(attributes[0]);
 		customer.setAge(Integer.parseInt(attributes[1]));
@@ -52,19 +53,15 @@ public class CustomerService {
 		for (int i = 0; i < products.length; i++) {
 			commitCustomerProductRelation(customerid,Integer.parseInt(products[i]));
 		}
-		
-		for (int i = 0; i < locations.length; i++) {
-			commitCustomerLocationRelation(customerid,Integer.parseInt(locations[i]));
-		}
 	}
 	
-	public void randomlyAssignCustomerLocation(ArrayList<Customer> cList){
+	public void randomlyAssignCustomerMachine(ArrayList<Customer> cList){
 		Random rand = new Random();
 		for (Customer customer : cList){
 			//TODO
 			int randInt = rand.nextInt(2) +1;
-			customer.setCurrentLocationID(randInt);
-			System.out.println("## CUSTOMER: " + customer.getName() + " locationID:" + randInt);
+			customer.setCurrentMachineID(randInt);
+			System.out.println("## CUSTOMER: " + customer.getName() + " machineID:" + randInt);
 		}
 	}
 
@@ -77,9 +74,6 @@ public class CustomerService {
 		dao.insertCustomerProductRelation(cID, pID);
 	}
 	
-	public void commitCustomerLocationRelation(int cID, int lID){
-		dao.insertCustomerLocationRelation(cID, lID);
-	}
 	
 	public ArrayList<Customer> retrieveAllCustomers() {
 		return dao.readAllCustomersFromDB();

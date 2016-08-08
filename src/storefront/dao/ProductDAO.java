@@ -10,7 +10,7 @@ import storefront.helpers.DBConnection;
 public class ProductDAO {
 
 	public static String TABLE_PRODUCT = "product";
-	public static String TABLE_PRODUCT_LOCATION = "product_location";
+	public static String TABLE_PRODUCT_MACHINE = "product_machine";
 	public static String TABLE_CUSTOMER_PRODUCT = "customer_product";
 	
 	
@@ -35,16 +35,16 @@ public class ProductDAO {
 		return retval;
 	}
 
-	public void insertProductLocationRelation(int productID, int locationID){
+	public void insertProductMachineRelation(int productID, int machineID){
 
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO ");
-		sb.append(TABLE_PRODUCT_LOCATION);
-		sb.append(" (product_id, loc_id) ");
+		sb.append(TABLE_PRODUCT_MACHINE);
+		sb.append(" (product_id, machine_id) ");
 
 		sb.append(" VALUES (");
 		sb.append(productID + ", ");
-		sb.append(locationID + "); ");
+		sb.append(machineID + "); ");
 
 		try {
 			DBConnection.getInstance().executeStatement(sb.toString());

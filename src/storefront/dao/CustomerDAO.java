@@ -10,7 +10,6 @@ import storefront.helpers.DBConnection;
 public class CustomerDAO {
 
 	public static String TABLE_CUSTOMER = "customer";
-	public static String TABLE_CUSTOMER_LOCATION = "customer_location";
 	public static String CUSTOMER_ID = "customer_id";
 	public static String TABLE_CUSTOMER_PRODUCT = "customer_product";
 
@@ -33,25 +32,6 @@ public class CustomerDAO {
 		}
 
 		return retval;
-	}
-
-	public void insertCustomerLocationRelation(int customerID, int locationID){
-
-		StringBuilder sb = new StringBuilder();
-		sb.append("INSERT INTO ");
-		sb.append(TABLE_CUSTOMER_LOCATION);
-		sb.append(" (customer_id, loc_id) ");
-
-		sb.append(" VALUES (");
-		sb.append(customerID + ", ");
-		sb.append(locationID + "); ");
-
-		try {
-			DBConnection.getInstance().executeStatement(sb.toString());
-		} catch (ClassNotFoundException | SQLException e) {
-			e.printStackTrace();
-		}
-
 	}
 
 	public void insertCustomerProductRelation(int customerID, int productID){			
@@ -86,6 +66,8 @@ public class CustomerDAO {
 				cust.setName(rs.getString("fname"));
 				cust.setAge(rs.getInt("age"));
 				cust.setGender(rs.getString("gender"));
+				//TODO 
+				//area
 				customerList.add(cust);
 				System.out.println("CUSTOMER RETRIEVED:"+cust);
 			}
@@ -93,22 +75,7 @@ public class CustomerDAO {
 			e.printStackTrace();
 		}
 		
-		sql = "select * from " + TABLE_CUSTOMER_LOCATION;
-		rs = null;
 
-		try {
-			rs = DBConnection.getInstance().executeSelectStatement(sql);
-			while (rs.next()) {
-				int cid = rs.getInt("customer_id");
-				int lid = rs.getInt("loc_id");
-				customerList.get(cid-1).addLocation(lid);
-				
-				System.out.println("CUSTOMER RETRIEVED:"+customerList.get(cid-1));
-			}
-		} catch (ClassNotFoundException | SQLException e) {
-			e.printStackTrace();
-		}
-		
 		return customerList;
 	}
 

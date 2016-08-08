@@ -7,22 +7,22 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import storefront.entities.Customer;
-import storefront.entities.Location;
+import storefront.entities.Machine;
 import storefront.entities.Product;
 import storefront.helpers.DBConnection;
 import storefront.services.CustomerService;
-import storefront.services.LocationService;
+import storefront.services.MachineService;
 import storefront.services.ProductService;
 import storefront.services.SystemService;
 
 public class Main {
 	ProductService theProductService = ProductService.getInstance();
 	CustomerService theCustomerService = CustomerService.getInstance();
-	LocationService theLocationService = LocationService.getInstance();
+	MachineService theMachineService = MachineService.getInstance();
 
 	ArrayList<Product> productList = new ArrayList<Product>();
 	ArrayList<Customer> customerList = new ArrayList<Customer>();
-	ArrayList<Location> locationList = new ArrayList<Location>();
+	ArrayList<Machine> machineList = new ArrayList<Machine>();
 
 	public static void main(String[] args) throws FileNotFoundException {
 		Main theMain = new Main();
@@ -43,7 +43,7 @@ public class Main {
 		}
 		try {
 			theProductService.readProductsFromFile(new File("input/Products.txt"));		
-			theLocationService.readLocationsFromFile(new File("input/Locations.txt"));
+			theMachineService.readMachinesFromFile(new File("input/Machines.txt"));
 			theCustomerService.readCustomersFromFile(new File("input/Customers.txt"));
 
 		} catch (FileNotFoundException e) {
@@ -54,7 +54,7 @@ public class Main {
 	public void loadTables(){
 			productList = theProductService.retrieveAllProducts();		
 			customerList = theCustomerService.retrieveAllCustomers();
-			locationList = theLocationService.retrieveAllLocations();
+			machineList = theMachineService.retrieveAllMachines();
 	}
 
 
@@ -70,7 +70,7 @@ public class Main {
 	public void round(int iter){
 		
 
-		theCustomerService.randomlyAssignCustomerLocation(theCustomerService.retrieveAllCustomers());
+		theCustomerService.randomlyAssignCustomerMachine(theCustomerService.retrieveAllCustomers());
 
 		for (Customer customer: customerList){
 
@@ -79,14 +79,14 @@ public class Main {
 		}
 	}
 
-	public void recordTransaction(Customer c, Product p, Location l, int round){
+	public void recordTransaction(Customer c, Product p, Machine l, int round){
 		int mockUnixDate=1470351705+(round*86400);
-		System.out.println("Customer: "+ c.getName() + " bought product: " + p.getProductName() + " from MachineID:" + l.getLocationID() + " at location: " + l.getLocationName() + " dateTime:" + new java.util.Date((long)mockUnixDate*1000));
+		System.out.println("Customer: "+ c.getName() + " bought product: " + p.getProductName() + " from MachineID:" + l.getMachineID() + " at machine: " + l.getMachineName() + " dateTime:" + new java.util.Date((long)mockUnixDate*1000));
 		SystemService.getInstance().commitPurchase(c, p, l, mockUnixDate);
 	}
 
-	public void recordRequest(Customer c, Product p, Location l, int round){
-		System.out.println("Customer: "+ c.getName() + " requested product: " + p.getProductName() + " from MachineID:" + l.getLocationID() + " at location: " + l.getLocationName() );
+	public void recordRequest(Customer c, Product p, Machine l, int round){
+		System.out.println("Customer: "+ c.getName() + " requested product: " + p.getProductName() + " from MachineID:" + l.getMachineID() + " at machine: " + l.getMachineName() );
 
 	}
 

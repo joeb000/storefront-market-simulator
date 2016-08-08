@@ -4,15 +4,15 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import storefront.entities.Location;
+import storefront.entities.Machine;
 import storefront.helpers.DBConnection;
 
-public class LocationDAO {
+public class MachineDAO {
 
 	public static String TABLE_LOCATION = "loc";
 	public static String TABLE_CUSTOMER_PRODUCT = "customer_product";
 
-	public int insertNewLocation(String name, double lat, double lon){
+	public int insertNewMachine(String name, double lat, double lon){
 		int retval=0;
 
 		StringBuilder sb = new StringBuilder();
@@ -35,16 +35,16 @@ public class LocationDAO {
 
 	}
 	
-	public ArrayList<Location> readAllLocationsFromDB(){
-		ArrayList<Location> locList = new ArrayList<Location>();
+	public ArrayList<Machine> readAllMachinesFromDB(){
+		ArrayList<Machine> locList = new ArrayList<Machine>();
 		String sql = "SELECT * FROM " + TABLE_LOCATION;
 		ResultSet rs = null;
 		try {
 			rs = DBConnection.getInstance().executeSelectStatement(sql);
 			while (rs.next()) {
-				Location loc = new Location();
-				loc.setLocationID(rs.getInt("loc_id"));
-				loc.setLocationName(rs.getString("loc_name"));
+				Machine loc = new Machine();
+				loc.setMachineID(rs.getInt("loc_id"));
+				loc.setMachineName(rs.getString("loc_name"));
 				loc.setLatitude(rs.getDouble("latitude"));
 				loc.setLatitude(rs.getDouble("longitude"));
 				locList.add(loc);

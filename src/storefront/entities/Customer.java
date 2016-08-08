@@ -20,7 +20,7 @@ public class Customer {
 	}
 	
 	
-	private int currentLocationID;
+	private int currentMachineID;
 	
 	public int getCustomerID() {
 		return customerID;
@@ -48,11 +48,11 @@ public class Customer {
 	}
 
 	
-	public int getCurrentLocationID() {
-		return currentLocationID;
+	public int getCurrentMachineID() {
+		return currentMachineID;
 	}
-	public void setCurrentLocationID(int currentLocationID) {
-		this.currentLocationID = currentLocationID;
+	public void setCurrentMachineID(int currentMachineID) {
+		this.currentMachineID = currentMachineID;
 	}
 	public int[] getProducts() {
 		return products;
@@ -61,11 +61,11 @@ public class Customer {
 		products[products.length] = pID;
 	}
 	
-	public int[] getLocations() {
+	public int[] getMachines() {
 		return locations;
 	}
 	
-	public void addLocation(int locID) {
+	public void addMachine(int locID) {
 		for (int i = 0; i < locations.length; i++) {
 			if (locations[i]==0){
 				locations[i]=locID;

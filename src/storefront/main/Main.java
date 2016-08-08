@@ -6,25 +6,24 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import storefront.entities.Area;
 import storefront.entities.Customer;
 import storefront.entities.Machine;
 import storefront.entities.Product;
 import storefront.helpers.DBConnection;
-import storefront.services.CustomerService;
-import storefront.services.MachineService;
-import storefront.services.ProductService;
 import storefront.services.SimulatorService;
 import storefront.services.SystemService;
 
 public class Main {
-	ProductService theProductService = ProductService.getInstance();
-	CustomerService theCustomerService = CustomerService.getInstance();
-	MachineService theMachineService = MachineService.getInstance();
-	SimulatorService theSimService = SimulatorService.getInstance();
 
-	ArrayList<Product> productList = new ArrayList<Product>();
-	ArrayList<Customer> customerList = new ArrayList<Customer>();
-	ArrayList<Machine> machineList = new ArrayList<Machine>();
+	private SimulatorService theSimService = SimulatorService.getInstance();
+	private SystemService theSystemService = SystemService.getInstance();
+
+
+	public ArrayList<Product> productList = new ArrayList<Product>();
+	public ArrayList<Customer> customerList = new ArrayList<Customer>();
+	public ArrayList<Machine> machineList = new ArrayList<Machine>();
+	public ArrayList<Area> areaList = new ArrayList<Area>();
 
 	public static void main(String[] args) throws FileNotFoundException {
 		Main theMain = new Main();
@@ -44,9 +43,10 @@ public class Main {
 			}
 		}
 		try {
-			theProductService.readProductsFromFile(new File("input/Products.txt"));		
-			theMachineService.readMachinesFromFile(new File("input/Machines.txt"));
-			theCustomerService.readCustomersFromFile(new File("input/Customers.txt"));
+			theSimService.readProductsFromFile(new File("input/Products.txt"));		
+			theSimService.readMachinesFromFile(new File("input/Machines.txt"));
+			theSimService.readCustomersFromFile(new File("input/Customers.txt"));
+			theSimService.readCustomersFromFile(new File("input/Areas.txt"));
 
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -54,9 +54,11 @@ public class Main {
 	}
 	
 	public void loadTables(){
-			productList = theProductService.retrieveAllProducts();		
-			customerList = theCustomerService.retrieveAllCustomers();
-			machineList = theMachineService.retrieveAllMachines();
+			productList = theSystemService.retrieveAllProducts();		
+			customerList = theSystemService.retrieveAllCustomers();
+			machineList = theSystemService.retrieveAllMachines();
+			areaList = theSystemService.retrieveAllAreas();
+
 	}
 
 
@@ -72,7 +74,7 @@ public class Main {
 	public void round(int iter){
 		
 
-		theCustomerService.randomlyAssignCustomerMachine(theCustomerService.retrieveAllCustomers());
+		theSimService.randomlyAssignCustomerMachine(theSystemService.retrieveAllCustomers());
 
 		for (Customer customer: customerList){
 

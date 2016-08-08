@@ -13,12 +13,14 @@ import storefront.helpers.DBConnection;
 import storefront.services.CustomerService;
 import storefront.services.MachineService;
 import storefront.services.ProductService;
+import storefront.services.SimulatorService;
 import storefront.services.SystemService;
 
 public class Main {
 	ProductService theProductService = ProductService.getInstance();
 	CustomerService theCustomerService = CustomerService.getInstance();
 	MachineService theMachineService = MachineService.getInstance();
+	SimulatorService theSimService = SimulatorService.getInstance();
 
 	ArrayList<Product> productList = new ArrayList<Product>();
 	ArrayList<Customer> customerList = new ArrayList<Customer>();

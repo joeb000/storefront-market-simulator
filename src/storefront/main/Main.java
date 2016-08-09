@@ -29,8 +29,8 @@ public class Main {
 		Main theMain = new Main();
 		theMain.initServices();
 		theMain.loadTables();
-
-		//theMain.startSimulation();
+		
+		theMain.startSimulation();
 	}
 
 	public void initServices(){
@@ -58,12 +58,13 @@ public class Main {
 			customerList = theSystemService.retrieveAllCustomers();
 			machineList = theSystemService.retrieveAllMachines();
 			areaList = theSystemService.retrieveAllAreas();
+			
 	}
 
 
 
 	public void startSimulation(){
-		int desiredRounds = 100;
+		int desiredRounds = 4;
 		for (int i = 0; i < desiredRounds; i++) {
 			System.out.println("start round " + i);
 			round(i);
@@ -73,10 +74,9 @@ public class Main {
 	public void round(int iter){
 		
 
-		theSimService.randomlyAssignCustomerMachine(theSystemService.retrieveAllCustomers());
 
 		for (Customer customer: customerList){
-
+			theSimService.randomlyAssignCustomerMachine(customer);
 			System.out.println("*******" + customer.getName());
 
 		}

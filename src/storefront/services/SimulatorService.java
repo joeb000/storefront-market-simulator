@@ -17,7 +17,7 @@ import storefront.entities.Machine;
 import storefront.entities.Product;
 
 public class SimulatorService {
-	
+
 	private static SimulatorService instance = null;
 	protected SimulatorService() {
 		// Exists only to defeat instantiation.
@@ -28,20 +28,20 @@ public class SimulatorService {
 		}
 		return instance;
 	}
-	
-	
+
+
 	private ProductDAO pdao = new ProductDAO();
 	private MachineDAO mdao = new MachineDAO();
 	private CustomerDAO cdao = new CustomerDAO();
 	private AreaDAO adao = new AreaDAO();
 
-	
-	
+
+
 	/*
 	 * PRODUCT
 	 * 
 	 */
-	
+
 
 	public void readProductsFromFile(File file) throws FileNotFoundException{
 		Scanner in = new Scanner(new FileReader(file));
@@ -60,19 +60,19 @@ public class SimulatorService {
 		product.setPrice(Float.parseFloat(attributes[2]));
 		System.out.println(product.toString());
 		return product;
-		
+
 	}
 	public int commitNewProduct(Product p){
 		return pdao.insertNewProduct(p.getProductName(), p.getPrice());
 	}
-	
-	
+
+
 	/*
 	 * MACHINE
 	 * 
 	 */
-	
-	
+
+
 	public void readMachinesFromFile(File file) throws FileNotFoundException{
 		Scanner in = new Scanner(new FileReader(file));
 		while (in.hasNext()){
@@ -92,25 +92,26 @@ public class SimulatorService {
 		machine.setMachineName(attributes[1]);
 		machine.setLatitude(Double.parseDouble(attributes[2]));
 		machine.setLongitude(Double.parseDouble(attributes[3]));
-//		for (int i = 0; i < pList.length; i++) {
-//			machine.addProuduct(ProductService.getInstance().getProductsByID(Integer.parseInt(pList[i])));
-//		}
+		machine.setAreaID(Integer.parseInt(attributes[4]));
+		for (int i = 0; i < pList.length; i++) {
+			machine.addProuduct(Integer.parseInt(pList[i]));
+		}
 		return machine;
 	}
-	
-	
-	
-	public int commitNewMachine(Machine l){
-		return mdao.insertNewMachine(l.getMachineName(),l.getLatitude(),l.getLongitude());
+
+
+
+	public int commitNewMachine(Machine m){
+		return mdao.insertNewMachine(m.getMachineName(),m.getLatitude(),m.getLongitude(),m.getAreaID());
 	}
 
-	
+
 	/*
 	 * CUSTOMER
 	 * 
 	 */
-	
-	
+
+
 	public void readCustomersFromFile(File file) throws FileNotFoundException{
 		Scanner in = new Scanner(new FileReader(file));
 		while (in.hasNext()){
@@ -124,13 +125,11 @@ public class SimulatorService {
 		String[] split = customerString.split("\"");
 		String[] attributes = split[0].split(",");
 		String[] products = split[1].split(",");
-		//TODO 
-		String[] machines = split[3].split(",");
 
 		customer.setName(attributes[0]);
 		customer.setAge(Integer.parseInt(attributes[1]));
 		customer.setGender(attributes[2]);
-
+		customer.setAreaID(Integer.parseInt(attributes[3]));
 		int customerid = commitNewCustomer(customer);
 		System.out.println("CustID: "+ customerid + " assigned to " + customer.getName());
 
@@ -138,30 +137,45 @@ public class SimulatorService {
 			commitCustomerProductRelation(customerid,Integer.parseInt(products[i]),50);
 		}
 	}
-	
-	public void randomlyAssignCustomerMachine(ArrayList<Customer> cList){
+
+	public void randomlyAssignCustomerMachine(Customer customer){
 		Random rand = new Random();
-		for (Customer customer : cList){
-			//TODO
-			int randInt = rand.nextInt(2) +1;
+		int a = customer.getAreaID();
+		ArrayList<Integer> intList = adao.machinesInArea(a);
+		if (!intList.isEmpty()){
+			int[] ints = new int[intList.size()];
+			for(int i=0, len = intList.size(); i < len; i++)
+				ints[i] = intList.get(i);
+			int randInt = pickOne(ints);
 			customer.setCurrentMachineID(randInt);
+
 			System.out.println("## CUSTOMER: " + customer.getName() + " machineID:" + randInt);
+		}
+		else {
+			customer.setCurrentMachineID(0);
+			System.out.println("#!# CUSTOMER: " + customer.getName() + " machineID not found...setting to 0" );
 		}
 	}
 
-	
+	public int pickOne(int[] ints){
+		System.out.println(ints.length);
+		Random rand = new Random();
+		return ints[rand.nextInt(ints.length)];
+	}
+
+
 	public int commitNewCustomer(Customer c){
-		return cdao.insertNewCustomer(c.getName(), c.getAge(),c.getGender());
+		return cdao.insertNewCustomer(c.getName(), c.getAge(),c.getGender(),c.getAreaID());
 	}
 	public void commitCustomerProductRelation(int cID, int pID, int probability){
 		cdao.insertCustomerProductRelation(cID, pID, probability);
 	}
-	
+
 	/*
 	 * AREA
 	 * 
 	 */
-	
+
 	public void readAreasFromFile(File file) throws FileNotFoundException{
 		Scanner in = new Scanner(new FileReader(file));
 		while (in.hasNext()){
@@ -169,7 +183,7 @@ public class SimulatorService {
 			parseStringToArea(line);
 		}
 	}
-	
+
 	private void parseStringToArea(String customerString){
 		Area area = new Area();
 		String[] attributes = customerString.split(",");
@@ -182,9 +196,9 @@ public class SimulatorService {
 		System.out.println("Area: "+ areaID + " created: " + area.getName());
 
 	}
-	
+
 	public int commitNewArea(Area a){
 		return adao.insertNewArea(a.getName());
 	}
-	
+
 }

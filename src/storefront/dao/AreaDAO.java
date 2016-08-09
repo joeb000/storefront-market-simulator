@@ -11,6 +11,7 @@ public class AreaDAO {
 
 	public static String TABLE_AREA = "area";
 
+
 	public int insertNewArea(String name){
 		int retval=0;
 		StringBuilder sb = new StringBuilder();
@@ -48,6 +49,22 @@ public class AreaDAO {
 			e.printStackTrace();
 		}
 		
+		return areaList;
+	}
+	
+	public ArrayList<Integer> machinesInArea(int areaID){
+		String sql = "SELECT * FROM machine WHERE area_id=" + areaID;
+		ResultSet rs = null;
+		ArrayList<Integer> areaList = new ArrayList<Integer>();
+
+		try {
+			rs = DBConnection.getInstance().executeSelectStatement(sql);
+			while (rs.next()) {
+				areaList.add(rs.getInt("machine_id"));
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
 		return areaList;
 	}
 

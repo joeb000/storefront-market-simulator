@@ -8,8 +8,15 @@ public class Machine {
 	private String machineName;
 	private double latitude;
 	private double longitude;
-	private ArrayList<Product> productList = new ArrayList<Product>();
-	private ArrayList<Integer> machineIDList = new ArrayList<Integer>();
+	private int areaID;
+	public int getAreaID() {
+		return areaID;
+	}
+	public void setAreaID(int areaID) {
+		this.areaID = areaID;
+	}
+
+	private ArrayList<Integer> productList = new ArrayList<Integer>();
 
 	public int getMachineID() {
 		return machineID;
@@ -36,27 +43,12 @@ public class Machine {
 		this.longitude = longitude;
 	}
 	
-	public ArrayList<Product> getProductList() {
+	public ArrayList<Integer> getProductList() {
 		return productList;
 	}
-	public void setProductList(ArrayList<Product> productList) {
-		this.productList = productList;
-	}
-	public void addProuduct(Product product){
-		productList.add(product);
-	}
-	public ArrayList<Integer> getMachineIDList() {
-		return machineIDList;
-	}
 
-	public void addMachineID(int mID){
-		machineIDList.add(mID);
-	}
-	@Override
-	public String toString() {
-		return "Machine [machineID=" + machineID + ", machineName=" + machineName + ", latitude=" + latitude
-				+ ", longitude=" + longitude + ", productList=" + productList + ", machineIDList=" + machineIDList
-				+ "]";
+	public void addProuduct(Integer productid){
+		productList.add(productid);
 	}
 
 

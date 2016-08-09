@@ -13,17 +13,19 @@ public class CustomerDAO {
 	public static String CUSTOMER_ID = "customer_id";
 	public static String TABLE_CUSTOMER_PRODUCT = "customer_product";
 
-	public int insertNewCustomer(String name, int age, String gender){
+	public int insertNewCustomer(String name, int age, String gender, int areaID){
 		int retval=0;
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO ");
 		sb.append(TABLE_CUSTOMER);
-		sb.append(" (fname, age, gender) ");
+		sb.append(" (fname, age, gender, area_id) ");
 
 		sb.append(" VALUES (");
 		sb.append("\"" + name + "\", ");
 		sb.append(age + ", ");
-		sb.append("\"" + gender + "\"); ");
+		sb.append("\"" + gender + "\", ");
+
+		sb.append( areaID + "); ");
 
 		try {
 			retval=DBConnection.getInstance().executeAutoIncrementingStatement(sb.toString());
@@ -68,15 +70,14 @@ public class CustomerDAO {
 				cust.setName(rs.getString("fname"));
 				cust.setAge(rs.getInt("age"));
 				cust.setGender(rs.getString("gender"));
-				//TODO 
-				//area
+				cust.setAreaID(rs.getInt("area_id"));
 				customerList.add(cust);
 				System.out.println("CUSTOMER RETRIEVED:"+cust);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
-		
+
 
 		return customerList;
 	}

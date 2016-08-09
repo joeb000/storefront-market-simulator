@@ -50,6 +50,22 @@ public class SystemService {
 		return mdao.readAllMachinesFromDB();
 	}
 	
+	public void initStockMachine(int machineID, int productID, int amount){
+		mdao.insertMachineProductAmount(machineID,productID,amount);
+	}
+	
+	public void stockMachine(int machineID, int productID, int amount){
+		mdao.updateMachineStockAddProductAmount(machineID,productID,amount);
+	}
+	
+	public void updateProductBought(int machineID, int productID, int amountBought){
+		mdao.updateProductBoughtInMachine(productID,machineID,amountBought);
+	}
+	
+	public void updateCapacityForMachine(int machineID, int amountBought){
+		mdao.updateOpenCapacity(machineID,amountBought);
+	}
+	
 	public ArrayList<Product> retrieveAllProducts() {
 		ArrayList<Product> productList = new ArrayList<Product>();
 		//TODO

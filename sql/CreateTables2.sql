@@ -2,14 +2,17 @@ CREATE TABLE customer (
 	customer_id	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	fname	TEXT,
 	age	INTEGER,
-	gender	TEXT
+	gender	TEXT,
+	area_id INTEGER
 );
 
 CREATE TABLE machine (
 	machine_id	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	loc_name	TEXT,
 	latitude	REAL,
-	longitude	REAL
+	longitude	REAL,
+	capacity	INTEGER DEFAULT 12,
+	area_id INTEGER
 );
 
 CREATE TABLE product (
@@ -26,6 +29,7 @@ CREATE TABLE area (
 CREATE TABLE product_machine (
 	product_id	INTEGER NOT NULL,
 	machine_id	INTEGER NOT NULL,
+	stock	INTEGER NOT NULL,
 	PRIMARY KEY ( product_id, machine_id)
 );
 

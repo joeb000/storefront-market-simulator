@@ -35,16 +35,17 @@ public class ProductDAO {
 		return retval;
 	}
 
-	public void insertProductMachineRelation(int productID, int machineID){
+	public void insertProductMachineRelation(int productID, int machineID, int stock){
 
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO ");
 		sb.append(TABLE_PRODUCT_MACHINE);
-		sb.append(" (product_id, machine_id) ");
+		sb.append(" (product_id, machine_id, stock) ");
 
 		sb.append(" VALUES (");
 		sb.append(productID + ", ");
-		sb.append(machineID + "); ");
+		sb.append(machineID + ", ");
+		sb.append(stock + "); ");
 
 		try {
 			DBConnection.getInstance().executeStatement(sb.toString());

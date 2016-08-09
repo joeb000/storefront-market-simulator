@@ -29,8 +29,7 @@ public class Product {
 	public String toString() {
 		return "Product [price=" + price + ", productID=" + productID + ", productName=" + productName + "]";
 	}
-	
-	
+
 	
 
 }

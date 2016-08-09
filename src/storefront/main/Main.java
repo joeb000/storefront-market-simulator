@@ -72,9 +72,6 @@ public class Main {
 	}
 
 	public void round(int iter){
-		
-
-
 		for (Customer customer: customerList){
 			theSimService.randomlyAssignCustomerMachine(customer);
 			System.out.println("*******" + customer.getName());

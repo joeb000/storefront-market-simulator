@@ -1,5 +1,6 @@
 package storefront.entities;
 
+import java.util.Arrays;
 
 public class Customer {
 
@@ -67,6 +68,13 @@ public class Customer {
 	}
 	public void addProduct(int pID) {
 		products[products.length] = pID;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [customerID=" + customerID + ", name=" + name + ", age=" + age + ", gender=" + gender
+				+ ", products=" + Arrays.toString(products) + ", areaID=" + areaID + ", currentMachineID="
+				+ currentMachineID + "]";
 	}
 
 

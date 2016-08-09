@@ -38,6 +38,10 @@ public class Area {
 			}
 		}
 	}
+	@Override
+	public String toString() {
+		return "Area [areaID=" + areaID + ", name=" + name + ", machineIDList=" + machineIDList + "]";
+	}
 
 
 }

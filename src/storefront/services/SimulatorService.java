@@ -69,7 +69,7 @@ public class SimulatorService {
 		    }
 		    
 		}
-		System.err.println("something went wrong choosing a product to buy");
+		log.error("something went wrong choosing a product to buy");
 		return 0;
 	}
 
@@ -85,7 +85,7 @@ public class SimulatorService {
 		while (in.hasNext()){
 			String line = in.nextLine();
 			Product aProduct = parseStringToProduct(line);
-			log.info("Product ID: #"+commitNewProduct(aProduct)+" added to DB");
+			log.debug("Product ID: #"+commitNewProduct(aProduct)+" added to DB");
 		}
 	}
 
@@ -95,7 +95,7 @@ public class SimulatorService {
 		product.setProductID(Integer.parseInt(attributes[0]));
 		product.setProductName(attributes[1]);
 		product.setPrice(Float.parseFloat(attributes[2]));
-		log.info(product.toString());
+		log.debug(product.toString());
 		return product;
 
 	}
@@ -116,7 +116,7 @@ public class SimulatorService {
 			String line = in.nextLine();
 			Machine loc = parseStringToMachine(line);
 			int machineid = commitNewMachine(loc);
-			log.info("New Machine "+ loc.getMachineName() + "(#"+machineid + " ) added to DB");
+			log.debug("New Machine "+ loc.getMachineName() + "(#"+machineid + " ) added to DB");
 		}
 	}
 
@@ -176,7 +176,7 @@ public class SimulatorService {
 		customer.setGender(attributes[2]);
 		customer.setAreaID(Integer.parseInt(attributes[3]));
 		int customerid = commitNewCustomer(customer);
-		log.info("CustID: "+ customerid + " assigned to " + customer.getName());
+		log.debug("CustID: "+ customerid + " assigned to " + customer.getName());
 
 		for (int i = 0; i < products.length; i++) {
 			String[] pInfo=products[i].split(":");
@@ -195,16 +195,15 @@ public class SimulatorService {
 			int randInt = pickOne(ints);
 			customer.setCurrentMachineID(randInt);
 
-			log.info("## CUSTOMER: " + customer.getName() + " machineID:" + randInt);
+			log.info("##### CUSTOMER: " + customer.getName() + " machineID: " + randInt + " #####");
 		}
 		else {
 			customer.setCurrentMachineID(0);
-			log.info("#!# CUSTOMER: " + customer.getName() + " machineID not found...setting to 0" );
+			log.error("#!# CUSTOMER: " + customer.getName() + " machineID not found...setting to 0" );
 		}
 	}
 
 	public int pickOne(int[] ints){
-		log.info(ints.length);
 		Random rand = new Random();
 		return ints[rand.nextInt(ints.length)];
 	}
@@ -239,7 +238,7 @@ public class SimulatorService {
 		int areaID = commitNewArea(area);
 		area.setAreaID(areaID);
 
-		log.info("Area: "+ areaID + " created: " + area.getName());
+		log.debug("Area: "+ areaID + " created: " + area.getName());
 
 	}
 

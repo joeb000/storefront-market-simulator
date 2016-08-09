@@ -58,17 +58,12 @@ public abstract class Simulation {
 			
 	}
 
-	public void startSimulation(){
-		int desiredRounds = 100;
+	public void startSimulation(int rounds){
+		int desiredRounds = rounds;
 		for (int i = 0; i < desiredRounds; i++) {
-			log.info("start round " + i);
+			log.debug("start round " + i);
 			round(i);
-			log.info("Testing log4j");
 		}
-		
-		log.info("Testing log4j");
-		log.debug("DebugTesting log4j");
-
 	}
 	
 	public abstract void round(int roundIter);

@@ -93,9 +93,7 @@ public class SimulatorService {
 		machine.setLatitude(Double.parseDouble(attributes[2]));
 		machine.setLongitude(Double.parseDouble(attributes[3]));
 		machine.setAreaID(Integer.parseInt(attributes[4]));
-		for (int i = 0; i < pList.length; i++) {
-			machine.addProuduct(Integer.parseInt(pList[i]));
-		}
+
 		return machine;
 	}
 

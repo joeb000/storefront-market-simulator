@@ -47,7 +47,9 @@ public class MachineDAO {
 				machine.setMachineID(rs.getInt("machine_id"));
 				machine.setMachineName(rs.getString("loc_name"));
 				machine.setLatitude(rs.getDouble("latitude"));
-				machine.setLatitude(rs.getDouble("longitude"));
+				machine.setLongitude(rs.getDouble("longitude"));
+				machine.setAreaID(rs.getInt("area_id"));
+
 				machineList.add(machine);
 				System.out.println("MACHINE RETRIEVED:"+machine);
 			}

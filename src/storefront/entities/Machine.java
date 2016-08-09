@@ -1,7 +1,5 @@
 package storefront.entities;
 
-import java.util.ArrayList;
-
 public class Machine {
 	
 	private int machineID;
@@ -9,15 +7,14 @@ public class Machine {
 	private double latitude;
 	private double longitude;
 	private int areaID;
+	private int capacity; 
+	
 	public int getAreaID() {
 		return areaID;
 	}
 	public void setAreaID(int areaID) {
 		this.areaID = areaID;
 	}
-
-	private ArrayList<Integer> productList = new ArrayList<Integer>();
-
 	public int getMachineID() {
 		return machineID;
 	}
@@ -43,16 +40,19 @@ public class Machine {
 		this.longitude = longitude;
 	}
 	
-	public ArrayList<Integer> getProductList() {
-		return productList;
-	}
-
-	public void addProuduct(Integer productid){
-		productList.add(productid);
-	}
-
-
 	
+	public int getCapacity() {
+		return capacity;
+	}
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+	@Override
+	public String toString() {
+		return "Machine [machineID=" + machineID + ", machineName=" + machineName + ", latitude=" + latitude
+				+ ", longitude=" + longitude + ", areaID=" + areaID + ", capacity=" + capacity + "]";
+	}
+
 	
 
 }

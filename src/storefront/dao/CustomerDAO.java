@@ -3,6 +3,7 @@ package storefront.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import storefront.entities.Customer;
 import storefront.helpers.DBConnection;
@@ -81,5 +82,19 @@ public class CustomerDAO {
 
 		return customerList;
 	}
-
+	
+	public HashMap<Integer,Integer> getCustomerProductRelation(int customerID){
+		String sql = "SELECT * FROM customer_product WHERE customer_id=" + customerID;
+		ResultSet rs = null;
+		HashMap<Integer,Integer> resultMap = new HashMap<Integer,Integer>();
+		try {
+			rs = DBConnection.getInstance().executeSelectStatement(sql);
+			while (rs.next()) {
+				resultMap.put(rs.getInt("product_id"), (rs.getInt("probability")));
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		return resultMap;
+	}
 }

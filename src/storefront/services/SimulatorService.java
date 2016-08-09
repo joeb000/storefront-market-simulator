@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -36,6 +37,36 @@ public class SimulatorService {
 	private CustomerDAO cdao = new CustomerDAO();
 	private AreaDAO adao = new AreaDAO();
 
+	
+
+	/*
+	 * General Service methods
+	 * 
+	 */
+
+	public int chooseProduct(int customerID){
+		
+		int total = 0;
+		HashMap<Integer,Integer> pMap = cdao.getCustomerProductRelation(customerID);
+		for (Integer value : pMap.values()) {
+			total += value;
+		}
+		int diceRoll = new Random().nextInt(total)+1;
+//		System.out.println("Dice Rolled: " + diceRoll);
+		int boundary = 0;
+		for (Map.Entry<Integer, Integer> entry : pMap.entrySet()) {
+		    int pID = entry.getKey();
+		    int probability = entry.getValue();
+		    boundary += probability;
+//		    System.out.println("PID: "+ pID + " P:" + probability);
+		    if (diceRoll <= boundary){
+		    	return pID;
+		    }
+		    
+		}
+		System.err.println("something went wrong choosing a product to buy");
+		return 0;
+	}
 
 
 	/*

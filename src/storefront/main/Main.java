@@ -79,6 +79,7 @@ public class Main {
 			System.out.println("*******" + customer.getName());
 			HashMap<Integer,Integer> productsInMachine = theSimService.getProductsInMachine(customer.getCurrentMachineID());
 			System.out.println(productsInMachine.toString());
+			System.out.println("Product Chosen:" + theSimService.chooseProduct(customer.getCustomerID()));
 		}
 	}
 

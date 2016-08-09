@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import org.apache.log4j.Logger;
+
 import storefront.entities.Area;
 import storefront.entities.Customer;
 import storefront.entities.Machine;
@@ -15,6 +17,9 @@ import storefront.services.SimulatorService;
 import storefront.services.SystemService;
 
 public abstract class Simulation {
+	
+	final static Logger log = Logger.getLogger(Simulation.class);
+
 
 	protected SimulatorService theSimService = SimulatorService.getInstance();
 	protected SystemService theSystemService = SystemService.getInstance();
@@ -56,9 +61,14 @@ public abstract class Simulation {
 	public void startSimulation(){
 		int desiredRounds = 100;
 		for (int i = 0; i < desiredRounds; i++) {
-			System.out.println("start round " + i);
+			log.info("start round " + i);
 			round(i);
+			log.info("Testing log4j");
 		}
+		
+		log.info("Testing log4j");
+		log.debug("DebugTesting log4j");
+
 	}
 	
 	public abstract void round(int roundIter);
@@ -66,13 +76,13 @@ public abstract class Simulation {
 	
 	protected void recordTransaction(int cID, int pID, int mID, int round){
 		int mockUnixDate=1470351705+(round*86400);
-		System.out.println("Customer: "+ cID + " bought product: " + pID + " from MachineID:" + mID + " dateTime:" + new java.util.Date((long)mockUnixDate*1000));
+		log.info("Customer: "+ cID + " bought product: " + pID + " from MachineID:" + mID + " dateTime:" + new java.util.Date((long)mockUnixDate*1000));
 		theSystemService.commitPurchase(cID, pID, mID, mockUnixDate);
 	}
 
 	protected void recordRequest(int cID, int pID, int mID, int round){
 		int mockUnixDate=1470351705+(round*86400);
-		System.out.println("Customer: "+ cID + " requested product: " + pID +  " at machine: " + mID );
+		log.info("Customer: "+ cID + " requested product: " + pID +  " at machine: " + mID );
 		theSystemService.commitRequest(cID, pID, mID, mockUnixDate);
 	}
 	

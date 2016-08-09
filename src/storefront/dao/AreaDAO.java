@@ -43,7 +43,6 @@ public class AreaDAO {
 				area.setAreaID(rs.getInt("area_id"));
 				area.setName(rs.getString("area_name"));
 				areaList.add(area);
-				System.out.println("AREA RETRIEVED:"+area);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();

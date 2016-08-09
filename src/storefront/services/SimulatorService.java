@@ -9,6 +9,8 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import storefront.dao.AreaDAO;
 import storefront.dao.CustomerDAO;
 import storefront.dao.MachineDAO;
@@ -17,8 +19,11 @@ import storefront.entities.Area;
 import storefront.entities.Customer;
 import storefront.entities.Machine;
 import storefront.entities.Product;
+import storefront.main.FilledMode;
 
 public class SimulatorService {
+	
+	final static Logger log = Logger.getLogger(SimulatorService.class);
 
 	private static SimulatorService instance = null;
 	protected SimulatorService() {
@@ -52,13 +57,13 @@ public class SimulatorService {
 			total += value;
 		}
 		int diceRoll = new Random().nextInt(total)+1;
-//		System.out.println("Dice Rolled: " + diceRoll);
+//		log.info("Dice Rolled: " + diceRoll);
 		int boundary = 0;
 		for (Map.Entry<Integer, Integer> entry : pMap.entrySet()) {
 		    int pID = entry.getKey();
 		    int probability = entry.getValue();
 		    boundary += probability;
-//		    System.out.println("PID: "+ pID + " P:" + probability);
+//		    log.info("PID: "+ pID + " P:" + probability);
 		    if (diceRoll <= boundary){
 		    	return pID;
 		    }
@@ -80,7 +85,7 @@ public class SimulatorService {
 		while (in.hasNext()){
 			String line = in.nextLine();
 			Product aProduct = parseStringToProduct(line);
-			System.out.println("Product ID: #"+commitNewProduct(aProduct)+" added to DB");
+			log.info("Product ID: #"+commitNewProduct(aProduct)+" added to DB");
 		}
 	}
 
@@ -90,7 +95,7 @@ public class SimulatorService {
 		product.setProductID(Integer.parseInt(attributes[0]));
 		product.setProductName(attributes[1]);
 		product.setPrice(Float.parseFloat(attributes[2]));
-		System.out.println(product.toString());
+		log.info(product.toString());
 		return product;
 
 	}
@@ -111,7 +116,7 @@ public class SimulatorService {
 			String line = in.nextLine();
 			Machine loc = parseStringToMachine(line);
 			int machineid = commitNewMachine(loc);
-			System.out.println("New Machine "+ loc.getMachineName() + "(#"+machineid + " ) added to DB");
+			log.info("New Machine "+ loc.getMachineName() + "(#"+machineid + " ) added to DB");
 		}
 	}
 
@@ -171,7 +176,7 @@ public class SimulatorService {
 		customer.setGender(attributes[2]);
 		customer.setAreaID(Integer.parseInt(attributes[3]));
 		int customerid = commitNewCustomer(customer);
-		System.out.println("CustID: "+ customerid + " assigned to " + customer.getName());
+		log.info("CustID: "+ customerid + " assigned to " + customer.getName());
 
 		for (int i = 0; i < products.length; i++) {
 			String[] pInfo=products[i].split(":");
@@ -190,16 +195,16 @@ public class SimulatorService {
 			int randInt = pickOne(ints);
 			customer.setCurrentMachineID(randInt);
 
-			System.out.println("## CUSTOMER: " + customer.getName() + " machineID:" + randInt);
+			log.info("## CUSTOMER: " + customer.getName() + " machineID:" + randInt);
 		}
 		else {
 			customer.setCurrentMachineID(0);
-			System.out.println("#!# CUSTOMER: " + customer.getName() + " machineID not found...setting to 0" );
+			log.info("#!# CUSTOMER: " + customer.getName() + " machineID not found...setting to 0" );
 		}
 	}
 
 	public int pickOne(int[] ints){
-		System.out.println(ints.length);
+		log.info(ints.length);
 		Random rand = new Random();
 		return ints[rand.nextInt(ints.length)];
 	}
@@ -234,7 +239,7 @@ public class SimulatorService {
 		int areaID = commitNewArea(area);
 		area.setAreaID(areaID);
 
-		System.out.println("Area: "+ areaID + " created: " + area.getName());
+		log.info("Area: "+ areaID + " created: " + area.getName());
 
 	}
 

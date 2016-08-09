@@ -73,7 +73,6 @@ public class CustomerDAO {
 				cust.setGender(rs.getString("gender"));
 				cust.setAreaID(rs.getInt("area_id"));
 				customerList.add(cust);
-				System.out.println("CUSTOMER RETRIEVED:"+cust);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();

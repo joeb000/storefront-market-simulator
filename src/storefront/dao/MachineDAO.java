@@ -51,9 +51,7 @@ public class MachineDAO {
 				machine.setLatitude(rs.getDouble("latitude"));
 				machine.setLongitude(rs.getDouble("longitude"));
 				machine.setAreaID(rs.getInt("area_id"));
-
 				machineList.add(machine);
-				System.out.println("MACHINE RETRIEVED:"+machine);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();

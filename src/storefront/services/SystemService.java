@@ -2,6 +2,8 @@ package storefront.services;
 
 import java.util.ArrayList;
 
+import org.apache.log4j.Logger;
+
 import storefront.dao.AreaDAO;
 import storefront.dao.CustomerDAO;
 import storefront.dao.MachineDAO;
@@ -13,7 +15,9 @@ import storefront.entities.Machine;
 import storefront.entities.Product;
 
 public class SystemService {
-	
+
+	final static Logger log = Logger.getLogger(SystemService.class);
+
 	private static SystemService instance = null;
 	protected SystemService() {
 		// Exists only to defeat instantiation.

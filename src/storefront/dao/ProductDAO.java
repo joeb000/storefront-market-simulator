@@ -25,8 +25,6 @@ public class ProductDAO {
 		sb.append(" VALUES (");
 		sb.append("\""+ name + "\", ");
 		sb.append(price + "); ");
-		System.out.println(sb.toString());
-
 		try {
 			retval=DBConnection.getInstance().executeAutoIncrementingStatement(sb.toString());
 		} catch (ClassNotFoundException | SQLException e) {
@@ -68,7 +66,6 @@ public class ProductDAO {
 				prod.setProductName(rs.getString("product_name"));
 				prod.setPrice(rs.getFloat("price"));
 				prodList.add(prod);
-				System.out.println("PRODUCT RETRIEVED:"+prod);
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -88,11 +89,16 @@ public class SimulatorService {
 		String[] split = machineString.split("\"");
 		String[] attributes = split[0].split(",");
 		String[] pList = split[1].split(",");
-		machine.setMachineID(Integer.parseInt(attributes[0]));
+		int machID=Integer.parseInt(attributes[0]);
+		int amount=4; //default for now
+		machine.setMachineID(machID);
 		machine.setMachineName(attributes[1]);
 		machine.setLatitude(Double.parseDouble(attributes[2]));
 		machine.setLongitude(Double.parseDouble(attributes[3]));
 		machine.setAreaID(Integer.parseInt(attributes[4]));
+		for (int i = 0; i < pList.length; i++) {
+			commitNewProductMachineRelation(machID,Integer.parseInt(pList[i]),amount);
+		}
 
 		return machine;
 	}
@@ -103,7 +109,9 @@ public class SimulatorService {
 		return mdao.insertNewMachine(m.getMachineName(),m.getLatitude(),m.getLongitude(),m.getAreaID());
 	}
 
-
+	public void commitNewProductMachineRelation(int machineID, int productID, int amount){
+		mdao.insertMachineProductAmount(machineID, productID, amount);
+	}
 	/*
 	 * CUSTOMER
 	 * 
@@ -197,6 +205,10 @@ public class SimulatorService {
 
 	public int commitNewArea(Area a){
 		return adao.insertNewArea(a.getName());
+	}
+	
+	public HashMap<Integer,Integer> getProductsInMachine(int currentMachineID) {		
+		return mdao.getProductsInMachine(currentMachineID);
 	}
 
 }

@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import storefront.entities.Area;
 import storefront.entities.Customer;
@@ -51,6 +52,7 @@ public class Main {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+		
 	}
 	
 	public void loadTables(){
@@ -75,7 +77,8 @@ public class Main {
 		for (Customer customer: customerList){
 			theSimService.randomlyAssignCustomerMachine(customer);
 			System.out.println("*******" + customer.getName());
-
+			HashMap<Integer,Integer> productsInMachine = theSimService.getProductsInMachine(customer.getCurrentMachineID());
+			System.out.println(productsInMachine.toString());
 		}
 	}
 

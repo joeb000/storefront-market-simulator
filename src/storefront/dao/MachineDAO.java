@@ -3,6 +3,7 @@ package storefront.dao;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import storefront.entities.Machine;
 import storefront.helpers.DBConnection;
@@ -101,6 +102,21 @@ public class MachineDAO {
 			e.printStackTrace();
 			
 		}
+	}
+	
+	public HashMap<Integer,Integer> getProductsInMachine(int machineID){
+		String sql = "SELECT * FROM product_machine WHERE machine_id=" + machineID;
+		ResultSet rs = null;
+		HashMap<Integer,Integer> resultMap = new HashMap<Integer,Integer>();
+		try {
+			rs = DBConnection.getInstance().executeSelectStatement(sql);
+			while (rs.next()) {
+				resultMap.put(rs.getInt("product_id"), (rs.getInt("stock")));
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		return resultMap;
 	}
 
 }

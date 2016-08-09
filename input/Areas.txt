@@ -1,4 +1,4 @@
 1,San Francisco
-2,New York City
-3,Detroit
+2,Philadelphia
+3,Portsmouth
 4,Dallas

@@ -2,26 +2,34 @@ package storefront.entities;
 
 
 public class Customer {
-	
+
 	private int customerID;
 	private String name;
 	private int age;
 	private String gender;
-	private int[] products;
-	private int[] locations = {0,0,0,0,0,0};
+	private int[] products = {0,0,0,0,0,0};
+	private int areaID;
 
-	
 	public Customer(int cID){
 		customerID=cID;
 	}
-	
+
 	public Customer(){
 
 	}
-	
-	
-	private int currentLocationID;
-	
+
+
+	public int getAreaID() {
+		return areaID;
+	}
+
+	public void setAreaID(int areaID) {
+		this.areaID = areaID;
+	}
+
+
+	private int currentMachineID;
+
 	public int getCustomerID() {
 		return customerID;
 	}
@@ -47,12 +55,12 @@ public class Customer {
 		this.gender = gender;
 	}
 
-	
-	public int getCurrentLocationID() {
-		return currentLocationID;
+
+	public int getCurrentMachineID() {
+		return currentMachineID;
 	}
-	public void setCurrentLocationID(int currentLocationID) {
-		this.currentLocationID = currentLocationID;
+	public void setCurrentMachineID(int currentMachineID) {
+		this.currentMachineID = currentMachineID;
 	}
 	public int[] getProducts() {
 		return products;
@@ -60,20 +68,7 @@ public class Customer {
 	public void addProduct(int pID) {
 		products[products.length] = pID;
 	}
-	
-	public int[] getLocations() {
-		return locations;
-	}
-	
-	public void addLocation(int locID) {
-		for (int i = 0; i < locations.length; i++) {
-			if (locations[i]==0){
-				locations[i]=locID;
-				break;
-			}
-		}
-	}
-	
-	
+
+
 
 }

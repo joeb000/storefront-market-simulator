@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import storefront.entities.Machine;
 import storefront.entities.Product;
 import storefront.helpers.DBConnection;
 
@@ -74,6 +75,17 @@ public class ProductDAO {
 		}
 		
 		return prodList;
+	}
+	
+	public float getProductPrice(int pID){
+		String sql = "SELECT price FROM " + TABLE_PRODUCT + " WHERE product_id=" + pID;
+		try {
+			return DBConnection.getInstance().executeSingleValueFloatStatement(sql);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		System.err.println("Error getting price, returning 0");
+		return 0;
 	}
 
 }

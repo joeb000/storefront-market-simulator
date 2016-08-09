@@ -33,11 +33,11 @@ public class SystemService {
 
 	
 	
-	public int commitPurchase(Customer c, Product p, Machine l, int dateStamp){
-		return dao.insertNewPurchase(dateStamp, p.getProductID(), l.getMachineID(), p.getPrice(), c.getCustomerID());
+	public int commitPurchase(int cID, int pID, int mID, int dateStamp){
+		return dao.insertNewPurchase(dateStamp, pID, mID, pdao.getProductPrice(pID), cID);
 	}
-	public int commitRequest(Customer c, Product p, Machine l, int dateStamp){
-		return dao.insertNewRequest(dateStamp, p.getProductID(), l.getMachineID(), c.getCustomerID());
+	public int commitRequest(int cID, int pID, int mID, int dateStamp){
+		return dao.insertNewRequest(dateStamp, pID, mID, cID);
 	}
 	
 	

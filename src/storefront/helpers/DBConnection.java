@@ -59,6 +59,12 @@ public class DBConnection {
 	    return rs.getInt(0);
 	}
 	
+	public float executeSingleValueFloatStatement(String sql) throws SQLException{
+		stmt = c.createStatement();
+	    ResultSet rs = stmt.executeQuery(sql);
+	    return rs.getFloat(1);
+	}
+	
 	public void executeStatement(String sql) throws SQLException{
 		stmt = c.createStatement();
 

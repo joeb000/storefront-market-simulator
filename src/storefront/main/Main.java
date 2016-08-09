@@ -66,32 +66,43 @@ public class Main {
 
 
 	public void startSimulation(){
-		int desiredRounds = 4;
+		int desiredRounds = 100;
 		for (int i = 0; i < desiredRounds; i++) {
 			System.out.println("start round " + i);
 			round(i);
 		}
 	}
 
-	public void round(int iter){
+	public void round(int roundIter){
 		for (Customer customer: customerList){
 			theSimService.randomlyAssignCustomerMachine(customer);
 			System.out.println("*******" + customer.getName());
 			HashMap<Integer,Integer> productsInMachine = theSimService.getProductsInMachine(customer.getCurrentMachineID());
 			System.out.println(productsInMachine.toString());
-			System.out.println("Product Chosen:" + theSimService.chooseProduct(customer.getCustomerID()));
+			int productChosen = theSimService.chooseProduct(customer.getCustomerID());
+			System.out.println("Product Chosen:" + productChosen);
+			if (productsInMachine.containsKey(productChosen) && productsInMachine.get(productChosen)>=1){
+				System.out.println("YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!");
+				recordTransaction(customer.getCustomerID(), productChosen, customer.getCurrentMachineID(), roundIter);
+			}
+			else {
+				System.out.println("BOOOOOO! the machine doesn't have what you are looking for");
+				recordRequest(customer.getCustomerID(), productChosen, customer.getCurrentMachineID(), roundIter);
+			}
+			
 		}
 	}
 
-	public void recordTransaction(Customer c, Product p, Machine l, int round){
+	public void recordTransaction(int cID, int pID, int mID, int round){
 		int mockUnixDate=1470351705+(round*86400);
-		System.out.println("Customer: "+ c.getName() + " bought product: " + p.getProductName() + " from MachineID:" + l.getMachineID() + " at machine: " + l.getMachineName() + " dateTime:" + new java.util.Date((long)mockUnixDate*1000));
-		SystemService.getInstance().commitPurchase(c, p, l, mockUnixDate);
+		System.out.println("Customer: "+ cID + " bought product: " + pID + " from MachineID:" + mID + " dateTime:" + new java.util.Date((long)mockUnixDate*1000));
+		theSystemService.commitPurchase(cID, pID, mID, mockUnixDate);
 	}
 
-	public void recordRequest(Customer c, Product p, Machine l, int round){
-		System.out.println("Customer: "+ c.getName() + " requested product: " + p.getProductName() + " from MachineID:" + l.getMachineID() + " at machine: " + l.getMachineName() );
-
+	public void recordRequest(int cID, int pID, int mID, int round){
+		int mockUnixDate=1470351705+(round*86400);
+		System.out.println("Customer: "+ cID + " requested product: " + pID +  " at machine: " + mID );
+		theSystemService.commitRequest(cID, pID, mID, mockUnixDate);
 	}
 
 }

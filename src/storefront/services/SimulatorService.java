@@ -91,13 +91,16 @@ public class SimulatorService {
 		String[] pList = split[1].split(",");
 		int machID=Integer.parseInt(attributes[0]);
 		int amount=4; //default for now
+		int capactity = Integer.parseInt(attributes[5]);
 		machine.setMachineID(machID);
 		machine.setMachineName(attributes[1]);
 		machine.setLatitude(Double.parseDouble(attributes[2]));
 		machine.setLongitude(Double.parseDouble(attributes[3]));
 		machine.setAreaID(Integer.parseInt(attributes[4]));
+		machine.setCapacity(capactity);
+
 		for (int i = 0; i < pList.length; i++) {
-			commitNewProductMachineRelation(machID,Integer.parseInt(pList[i]),amount);
+			commitNewProductMachineRelation(machID,Integer.parseInt(pList[i]),(capactity/pList.length));
 		}
 
 		return machine;
@@ -106,7 +109,7 @@ public class SimulatorService {
 
 
 	public int commitNewMachine(Machine m){
-		return mdao.insertNewMachine(m.getMachineName(),m.getLatitude(),m.getLongitude(),m.getAreaID());
+		return mdao.insertNewMachine(m.getMachineName(),m.getLatitude(),m.getLongitude(),m.getAreaID(),m.getCapacity());
 	}
 
 	public void commitNewProductMachineRelation(int machineID, int productID, int amount){

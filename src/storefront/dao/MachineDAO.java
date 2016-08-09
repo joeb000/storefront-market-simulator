@@ -12,18 +12,19 @@ public class MachineDAO {
 
 	public static String TABLE_MACHINE = "machine";
 
-	public int insertNewMachine(String name, double lat, double lon, int areaID){
+	public int insertNewMachine(String name, double lat, double lon, int areaID, int capacity){
 		int retval=0;
 
 		StringBuilder sb = new StringBuilder();
 		sb.append("INSERT INTO ");
 		sb.append(TABLE_MACHINE);
-		sb.append(" (loc_name, latitude, longitude, area_id) ");
+		sb.append(" (loc_name, latitude, longitude, capacity, area_id) ");
 
 		sb.append(" VALUES (");
 		sb.append("\"" + name + "\", ");
 		sb.append(lat + ", ");
 		sb.append(lon + ", ");
+		sb.append(capacity + ", ");
 
 		sb.append(areaID + "); ");
 

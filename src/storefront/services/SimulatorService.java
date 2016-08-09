@@ -143,7 +143,8 @@ public class SimulatorService {
 		System.out.println("CustID: "+ customerid + " assigned to " + customer.getName());
 
 		for (int i = 0; i < products.length; i++) {
-			commitCustomerProductRelation(customerid,Integer.parseInt(products[i]),50);
+			String[] pInfo=products[i].split(":");
+			commitCustomerProductRelation(customerid,Integer.parseInt(pInfo[0]),Integer.parseInt(pInfo[1]));
 		}
 	}
 

@@ -28,7 +28,7 @@ public abstract class Simulation {
 	protected ArrayList<Customer> customerList = new ArrayList<Customer>();
 	protected ArrayList<Machine> machineList = new ArrayList<Machine>();
 	protected ArrayList<Area> areaList = new ArrayList<Area>();
-	
+		
 	public void initServices(){
 		if (new File("storefront.db").delete()){
 
@@ -63,6 +63,7 @@ public abstract class Simulation {
 		for (int i = 0; i < desiredRounds; i++) {
 			log.debug("start round " + i);
 			round(i);
+			
 		}
 	}
 	

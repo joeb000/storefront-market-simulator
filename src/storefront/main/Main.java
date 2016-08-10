@@ -11,30 +11,48 @@ public class Main {
 
         PropertyConfigurator.configure(log4j_path);
         
-		Simulation theMain = filledMode();
-	//	Simulation theMain = dumbMode();
+	//	Simulation theMain = filledMode();
+		Simulation theMain = dumbMode();
+	//	Simulation theMain = responsiveMode();
 
-		theMain.initServices();
+	//	theMain.initServices();
 		theMain.loadTables();
-		theMain.startSimulation(331);
+		theMain.startSimulation();
 	}
 	
-	public static Simulation dumbMode(){
+	private void processArgs(){
+		
+	}
+	
+	
+	private static Simulation dumbMode(){
+		String dbName = "storefront_dumb.db";
+		System.setProperty("storefront.db.name", dbName);
+		
 		DumbMode mode = new DumbMode();
+		mode.setDatabaseFileName(dbName);
 		mode.setRestockPeriod(30);
-		mode.setSimulationRounds(301);
+		mode.setSimulationRounds(10);
 		return mode;
 	}
 	
-	public static Simulation filledMode(){
+	private static Simulation filledMode(){
+		String dbName = "storefront_filled.db";
+		System.setProperty("storefront.db.name", dbName);
+
 		FilledMode mode = new FilledMode();
-		mode.setRestockPeriod(30);
-		mode.setSimulationRounds(301);
+		mode.setDatabaseFileName(dbName);
+		mode.setRestockPeriod(10);
+		mode.setSimulationRounds(10);
 		return mode;
 	}
 	
-	public static Simulation responsiveMode(){
+	private static Simulation responsiveMode(){
+		String dbName = "storefront_responsive.db";
+		System.setProperty("storefront.db.name", dbName);
+
 		ResponsiveMode mode = new ResponsiveMode();
+		mode.setDatabaseFileName(dbName);
 		mode.setRestockPeriod(30);
 		mode.setSimulationRounds(301);
 		return mode;

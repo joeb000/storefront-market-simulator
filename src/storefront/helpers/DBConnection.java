@@ -13,10 +13,19 @@ import java.sql.Statement;
 public class DBConnection {
 	private static Connection c = null;
 	private Statement stmt = null;
+	private static String dbName;
+
+	public String getDbName() {
+		return dbName;
+	}
+
+	public void setDbName(String dbName) {
+		this.dbName = dbName;
+	}
 
 	public DBConnection() throws ClassNotFoundException, SQLException{
 		Class.forName("org.sqlite.JDBC");
-		c = DriverManager.getConnection("jdbc:sqlite:storefront.db");
+		c = DriverManager.getConnection("jdbc:sqlite:"+System.getProperty("storefront.db.name"));
 	}
 
 	private static DBConnection instance = null;

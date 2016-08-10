@@ -1,11 +1,43 @@
 package storefront.main;
 
+import java.util.HashMap;
+
+import storefront.entities.Customer;
+
 public class ResponsiveMode extends Simulation {
 
 	@Override
 	public void round(int roundIter) {
-		// TODO Auto-generated method stub
+		if (roundIter%restockPeriod==0){
+			theSystemService.dumbRestockMachines();
+		}
 		
+		for (Customer customer: customerList){
+			theSimService.randomlyAssignCustomerMachine(customer);
+			int currentMachineID = customer.getCurrentMachineID();
+			
+			HashMap<Integer,Integer> productsInMachine = theSimService.getProductsInMachine(currentMachineID);
+			log.debug(productsInMachine.toString());
+			int productChosen = theSimService.chooseProduct(customer.getCustomerID());
+			log.debug("Product Chosen:" + productChosen);
+			if (productsInMachine.containsKey(productChosen)){
+				if (productsInMachine.get(productChosen)>=1) {
+					log.debug("YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!");
+					theSimService.productBoughtFromMachine(currentMachineID,productChosen);
+					recordTransaction(customer.getCustomerID(), productChosen, currentMachineID, roundIter);
+				}
+				else {
+					recordRequest(customer.getCustomerID(), productChosen, currentMachineID, roundIter);
+					log.debug("OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY");
+				}
+			}
+			else {
+				log.debug("BOOOOOO! the machine doesn't have what you are looking for");
+				recordRequest(customer.getCustomerID(), productChosen, currentMachineID, roundIter);
+			}
+			
+		}		
 	}
+
 
 }

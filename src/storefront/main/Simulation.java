@@ -30,6 +30,7 @@ public abstract class Simulation {
 	protected ArrayList<Area> areaList = new ArrayList<Area>();
 	protected int restockPeriod;
 	protected int simulationRounds;
+	protected String databaseFileName;
 
 		
 	public int getRestockPeriod() {
@@ -48,9 +49,19 @@ public abstract class Simulation {
 	public void setSimulationRounds(int simulationRounds) {
 		this.simulationRounds = simulationRounds;
 	}
+	
+
+	public String getDatabaseFileName() {
+		return databaseFileName;
+	}
+
+	public void setDatabaseFileName(String databaseFileName) {
+		this.databaseFileName = databaseFileName;
+	}
 
 	public void initServices(){
-		if (new File("storefront.db").delete()){
+		File db = new File(getDatabaseFileName());
+		if (!db.exists() || db.delete()){
 
 			try {
 				DBConnection.getInstance().executeDBScripts("sql/CreateTables2.sql");
@@ -78,13 +89,15 @@ public abstract class Simulation {
 			
 	}
 
-	public void startSimulation(int rounds){
-		int desiredRounds = rounds;
+	public void startSimulation(){
+		int desiredRounds = getSimulationRounds();
 		for (int i = 0; i < desiredRounds; i++) {
-			log.debug("start round " + i);
+			log.debug("+++++++++++++ Round " + i + " +++++++++++++");
 			round(i);
-			
 		}
+		
+		log.info("### SIMULATION OVER ###");
+		log.info("Overall Efficiency Ratio:" + theSystemService.calculateOverallEfficiencyRatio());
 	}
 	
 	public abstract void round(int roundIter);

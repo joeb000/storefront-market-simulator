@@ -2,9 +2,12 @@ package storefront.main;
 
 import java.util.HashMap;
 
+import org.apache.log4j.Logger;
+
 import storefront.entities.Customer;
 
 public class DumbMode extends Simulation {
+	final static Logger log = Logger.getLogger(DumbMode.class);
 
 	@Override
 	public void round(int roundIter) {

@@ -97,7 +97,18 @@ public class MachineDAO {
 		}
 	}
 	
-	public void dumbUpdateMachineStock(int machineID, int productID, int amount) {
+	public boolean machineContainsProduct(int machineID, int productID){
+		String sql = "SELECT * FROM product_machine WHERE machine_id=" +machineID + " AND product_id="+productID;
+		try {
+			return DBConnection.getInstance().checkIfRowExists(sql);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		log.error("Something went wrong executing check Row exists");
+		return false;
+	}
+	
+	public void updateMachineStockToAmount(int machineID, int productID, int amount) {
 		String sql = "UPDATE product_machine SET stock=(" + amount + ") WHERE machine_id=" +machineID + " AND product_id="+productID;
 		try {
 			DBConnection.getInstance().executeStatement(sql);

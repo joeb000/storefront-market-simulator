@@ -12,10 +12,10 @@ public class Main {
         PropertyConfigurator.configure(log4j_path);
         
 	//	Simulation theMain = filledMode();
-		Simulation theMain = dumbMode();
-	//	Simulation theMain = responsiveMode();
+	//	Simulation theMain = dumbMode();
+		Simulation theMain = responsiveMode();
 
-	//	theMain.initServices();
+		theMain.initServices();
 		theMain.loadTables();
 		theMain.startSimulation();
 	}
@@ -31,8 +31,8 @@ public class Main {
 		
 		DumbMode mode = new DumbMode();
 		mode.setDatabaseFileName(dbName);
-		mode.setRestockPeriod(30);
-		mode.setSimulationRounds(10);
+		mode.setRestockPeriod(15);
+		mode.setSimulationRounds(301);
 		return mode;
 	}
 	
@@ -42,8 +42,8 @@ public class Main {
 
 		FilledMode mode = new FilledMode();
 		mode.setDatabaseFileName(dbName);
-		mode.setRestockPeriod(10);
-		mode.setSimulationRounds(10);
+		mode.setRestockPeriod(30);
+		mode.setSimulationRounds(301);
 		return mode;
 	}
 	
@@ -53,7 +53,7 @@ public class Main {
 
 		ResponsiveMode mode = new ResponsiveMode();
 		mode.setDatabaseFileName(dbName);
-		mode.setRestockPeriod(30);
+		mode.setRestockPeriod(15);
 		mode.setSimulationRounds(301);
 		return mode;
 	}

@@ -103,4 +103,13 @@ public class DBConnection {
 		//c.commit();
 		c.close();
 	}
+
+	public boolean checkIfRowExists(String sql) throws SQLException {
+		stmt = c.createStatement();
+	    ResultSet rs = stmt.executeQuery(sql);
+	    if (rs.next()){
+	    	return true;
+	    }
+		return false;
+	}
 }

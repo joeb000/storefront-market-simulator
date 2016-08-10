@@ -2,14 +2,17 @@ package storefront.main;
 
 import java.util.HashMap;
 
+import org.apache.log4j.Logger;
+
 import storefront.entities.Customer;
 
 public class ResponsiveMode extends Simulation {
+	final static Logger log = Logger.getLogger(ResponsiveMode.class);
 
 	@Override
 	public void round(int roundIter) {
 		if (roundIter%restockPeriod==0){
-			theSystemService.dumbRestockMachines();
+			theSystemService.omnicientRestock();
 		}
 		
 		for (Customer customer: customerList){

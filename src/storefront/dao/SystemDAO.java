@@ -1,9 +1,12 @@
 package storefront.dao;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 
+import storefront.entities.Machine;
 import storefront.helpers.DBConnection;
 
 public class SystemDAO {
@@ -102,6 +105,45 @@ public class SystemDAO {
 		}
 		log.error("Error retrieving machine total requests");
 		return 0;
+	}
+	
+	public int getMachineProductTotalSales(int machineID, int productID) {
+		String sql = "SELECT COUNT(*) FROM purchases WHERE machine_id=" + machineID + " AND product_id = " + productID;
+		try {
+			return DBConnection.getInstance().executeSingleValueStatement(sql);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		log.error("Error retrieving machine product total sales");
+		return 0;
+	}
+
+	public int getMachineProductTotalRequests(int machineID, int productID) {
+		String sql = "SELECT COUNT(*) FROM requests WHERE machine_id=" + machineID + " AND product_id = " + productID;
+		try {
+			return DBConnection.getInstance().executeSingleValueStatement(sql);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		log.error("Error retrieving machine product total requests");
+		return 0;
+	}
+	
+	public ArrayList<Integer> getAllProductsSoldOrRequesteForMachine(int machineID){
+		ArrayList<Integer> ret = new ArrayList<Integer>();
+		String sql = "SELECT product_id FROM requests WHERE machine_id = " + machineID + " UNION "
+				+ "SELECT product_id FROM purchases  WHERE machine_id =" + machineID;
+		ResultSet rs = null;
+		try {
+			rs = DBConnection.getInstance().executeSelectStatement(sql);
+			while (rs.next()) {
+				ret.add(rs.getInt(1));
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return ret;
 	}
 
 	public int getTotalSalesForArea(int areaID) {

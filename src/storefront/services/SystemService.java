@@ -1,7 +1,6 @@
 package storefront.services;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import org.apache.log4j.Logger;
 
@@ -108,6 +107,9 @@ public class SystemService {
 		return  (float)productAreaSales/totalAreaSales;
 	}
 	
+	/**
+	 * Restock machine exactly as it started
+	 */
 	public void dumbRestockMachines() {
 		ArrayList<Machine> machLIst = retrieveAllMachines();
 		for (Machine machine : machLIst) {
@@ -117,9 +119,66 @@ public class SystemService {
 			
 			int updateAmount = (totalCapacity/prodInMach.size());
 			for (Integer pID : prodInMach) {
-				mdao.dumbUpdateMachineStock(machine.getMachineID(), pID, updateAmount);
+				mdao.updateMachineStockToAmount(machine.getMachineID(), pID, updateAmount);
 			}
 			log.debug("Machine Restocked: "+ machine.getMachineID());
 		}
 	}
+	
+	
+	/**
+	 * The machine knows everything (purchases and requests)
+	 */
+	public void omnicientRestock(){
+		//for each machine
+		for (Machine machine : retrieveAllMachines()){
+			
+			
+			
+			//TODO - clear all products from machine
+			int stockedAmt = 0;
+			
+			
+
+			//SELECT COUNT(*) FROM requests UNION SELECT COUNT(*) FROM purchases = totalInteractions
+			int totalInteractions = dao.getMachineTotalRequests(machine.getMachineID()) + dao.getMachineTotalSales(machine.getMachineID());
+			//for product in (SELECT product_id FROM requests UNION SELECT product_id FROM purchases)
+			 for (int productID : dao.getAllProductsSoldOrRequesteForMachine(machine.getMachineID())){
+				 int totalProductInteractions = dao.getMachineProductTotalRequests(machine.getMachineID(), productID) + dao.getMachineProductTotalSales(machine.getMachineID(), productID);
+				 
+				 int machCap = mdao.getMachineCapacity(machine.getMachineID());
+				 float totalsRatio = (float)totalProductInteractions/totalInteractions;
+				 float floatAmount = (float)(machCap * totalsRatio);
+				 int roundedAmount = Math.round(floatAmount);
+				 log.debug("Responsively Updating Machine " + machine.getMachineID() + " Product " + productID + " STOCK: " + roundedAmount);
+				 
+				 if (mdao.machineContainsProduct(machine.getMachineID(),productID)){
+					 mdao.updateMachineStockToAmount(machine.getMachineID(), productID, roundedAmount);
+				 } else {
+					 mdao.insertMachineProductAmount(machine.getMachineID(), productID, roundedAmount);
+				 }
+				 stockedAmt+=roundedAmount;
+			 }
+			 log.debug("MachineID: " + machine.getMachineID() + " stocked with "+ stockedAmt + " items");
+			 	//SELECT COUNT(*) FROM requests WHERE machine_id =  AND product_id = 
+				//SELECT COUNT(*) FROM purchases WHERE machine_id =  AND product_id = 
+				// = totalProductInteractions
+				
+				// stock machine: machineCapacity * (totalProductInteractions/totalInteractions)
+				
+		}
+			// List all requests and transactions
+			// for each product in List
+				// stock machine with capacity * productPurchases/totalPurchases
+	}
+
+	/**
+	 * The machine only knows purchases
+	 */
+	public void responsiveRestock(){
+		//for each machine
+			//get all requests and transactions
+			//
+	}
+
 }

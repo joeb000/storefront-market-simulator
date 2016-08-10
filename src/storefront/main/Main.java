@@ -11,12 +11,12 @@ public class Main {
 
         PropertyConfigurator.configure(log4j_path);
         
-	//	Main theMain = new Main();
-		Simulation theMain = new FilledMode();
+	//	Simulation theMain = new FilledMode();
+		Simulation theMain = new DumbMode();
 
 		theMain.initServices();
 		theMain.loadTables();
-		theMain.startSimulation(5);
+		theMain.startSimulation(30);
 	}
 
 }

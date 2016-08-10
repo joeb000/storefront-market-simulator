@@ -151,6 +151,11 @@ public class SimulatorService {
 	public void commitNewProductMachineRelation(int machineID, int productID, int amount){
 		mdao.insertMachineProductAmount(machineID, productID, amount);
 	}
+	
+	public void productBoughtFromMachine(int machineID, int productID){
+		mdao.updateProductBoughtInMachine(productID, machineID, 1);
+	}
+	
 	/*
 	 * CUSTOMER
 	 * 

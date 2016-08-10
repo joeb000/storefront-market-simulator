@@ -1,0 +1,1411 @@
+2016-08-10 14:05:31 DEBUG SimulatorService:98 - Product [price=1.5, productID=1, productName=Coke]
+2016-08-10 14:05:31 DEBUG SimulatorService:88 - Product ID: #1 added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:98 - Product [price=10.0, productID=2, productName=T-Shirt]
+2016-08-10 14:05:31 DEBUG SimulatorService:88 - Product ID: #2 added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:98 - Product [price=1.5, productID=3, productName=Peanuts]
+2016-08-10 14:05:31 DEBUG SimulatorService:88 - Product ID: #3 added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:98 - Product [price=15.0, productID=4, productName=iTunes Gift Card]
+2016-08-10 14:05:31 DEBUG SimulatorService:88 - Product ID: #4 added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:98 - Product [price=1.0, productID=5, productName=Water]
+2016-08-10 14:05:31 DEBUG SimulatorService:88 - Product ID: #5 added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:98 - Product [price=5.0, productID=6, productName=Sunscreen]
+2016-08-10 14:05:31 DEBUG SimulatorService:88 - Product ID: #6 added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:98 - Product [price=4.0, productID=7, productName=Magic Cards]
+2016-08-10 14:05:31 DEBUG SimulatorService:88 - Product ID: #7 added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:98 - Product [price=3.0, productID=8, productName=Dog Treats]
+2016-08-10 14:05:31 DEBUG SimulatorService:88 - Product ID: #8 added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:98 - Product [price=4.5, productID=9, productName=Beer]
+2016-08-10 14:05:31 DEBUG SimulatorService:88 - Product ID: #9 added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:98 - Product [price=11.0, productID=10, productName=Reading Glasses]
+2016-08-10 14:05:31 DEBUG SimulatorService:88 - Product ID: #10 added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine CCA(#1 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Hilton Hotel(#2 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine West Portal Station(#3 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine WestField Mall(#4 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Golden Gate Park(#5 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Art Musuem(#6 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Geno's Steaks(#7 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Trocadero Theatre(#8 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Liberty Bell(#9 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Lincoln Financial Field(#10 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Portsmouth Airport(#11 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Water Country(#12 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Leary Field(#13 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Wentworth by the Sea(#14 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:119 - New Machine Odiorne State Park(#15 ) added to DB
+2016-08-10 14:05:31 DEBUG SimulatorService:184 - CustID: 1 assigned to Joe
+2016-08-10 14:05:31 DEBUG SimulatorService:184 - CustID: 2 assigned to Rob
+2016-08-10 14:05:31 DEBUG SimulatorService:184 - CustID: 3 assigned to Bob
+2016-08-10 14:05:31 DEBUG SimulatorService:184 - CustID: 4 assigned to Harry
+2016-08-10 14:05:31 DEBUG SimulatorService:184 - CustID: 5 assigned to Gerald
+2016-08-10 14:05:31 DEBUG SimulatorService:184 - CustID: 6 assigned to Mary
+2016-08-10 14:05:31 DEBUG SimulatorService:184 - CustID: 7 assigned to Bertha
+2016-08-10 14:05:31 DEBUG SimulatorService:184 - CustID: 8 assigned to Patricia
+2016-08-10 14:05:31 DEBUG SimulatorService:184 - CustID: 9 assigned to Jenny
+2016-08-10 14:05:31 DEBUG SimulatorService:246 - Area: 1 created: San Francisco
+2016-08-10 14:05:31 DEBUG SimulatorService:246 - Area: 2 created: Philadelphia
+2016-08-10 14:05:31 DEBUG SimulatorService:246 - Area: 3 created: Portsmouth
+2016-08-10 14:05:31 DEBUG SimulatorService:246 - Area: 4 created: Dallas
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 0
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 3=4, 10=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 7 at machine: 3
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.0
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 6 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=4, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 2 bought product: 4 from MachineID:6 dateTime:Thu Aug 04 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 11 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 5=3, 6=3, 7=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 3 requested product: 4 at machine: 11
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.33333334
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 1 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 7=3, 8=3, 9=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 4 bought product: 2 from MachineID:1 dateTime:Thu Aug 04 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 10 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {5=4, 6=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 4 at machine: 10
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.4
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 11 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 5=3, 6=3, 7=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 6 requested product: 4 at machine: 11
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.33333334
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 7 requested product: 3 at machine: 4
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.2857143
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=4, 8=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 9
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.25
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 13 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=3, 8=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 9 bought product: 3 from MachineID:13 dateTime:Thu Aug 04 19:01:45 EDT 2016
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 1
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 2 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=4, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 7 at machine: 2
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=4, 8=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 2 requested product: 4 at machine: 9
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 13 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=2, 8=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 3 bought product: 3 from MachineID:13 dateTime:Fri Aug 05 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 5 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=6, 2=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 4 requested product: 8 at machine: 5
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=4, 8=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 4 at machine: 9
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 12 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {4=3, 8=3, 9=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 6 requested product: 1 at machine: 12
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 2 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=4, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 7 requested product: 10 at machine: 2
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 6 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=3, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 8 at machine: 6
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 12 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {4=3, 8=3, 9=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 9 bought product: 10 from MachineID:12 dateTime:Fri Aug 05 19:01:45 EDT 2016
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 2
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 4 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 4 at machine: 4
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 6 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=3, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 2 bought product: 4 from MachineID:6 dateTime:Sat Aug 06 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 12 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {4=3, 8=3, 9=3, 10=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 3 requested product: 3 at machine: 12
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 5 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=6, 2=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 4 requested product: 8 at machine: 5
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=4, 8=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 5 bought product: 6 from MachineID:9 dateTime:Sat Aug 06 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 14 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=6, 9=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 6 bought product: 1 from MachineID:14 dateTime:Sat Aug 06 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 1 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=2, 7=3, 8=3, 9=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 7 requested product: 4 at machine: 1
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=3, 8=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 8 bought product: 8 from MachineID:9 dateTime:Sat Aug 06 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 13 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=1, 8=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 9 bought product: 3 from MachineID:13 dateTime:Sat Aug 06 19:01:45 EDT 2016
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 3
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 1 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=2, 7=3, 8=3, 9=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 1 bought product: 7 from MachineID:1 dateTime:Sun Aug 07 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 7 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 2 requested product: 6 at machine: 7
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 13 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 3 requested product: 4 at machine: 13
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 1 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=2, 7=2, 8=3, 9=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 4 bought product: 2 from MachineID:1 dateTime:Sun Aug 07 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 10 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {5=4, 6=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 5 bought product: 6 from MachineID:10 dateTime:Sun Aug 07 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 11 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 5=3, 6=3, 7=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 6 bought product: 1 from MachineID:11 dateTime:Sun Aug 07 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 1 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=1, 7=2, 8=3, 9=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 7 requested product: 10 at machine: 1
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 7 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 7
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=3, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 9 bought product: 3 from MachineID:15 dateTime:Sun Aug 07 19:01:45 EDT 2016
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 4
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 1 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=1, 7=2, 8=3, 9=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 1 bought product: 7 from MachineID:1 dateTime:Mon Aug 08 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 7 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 2 requested product: 6 at machine: 7
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 13 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 2 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=4, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 4 requested product: 8 at machine: 2
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 4 at machine: 9
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 14 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=5, 9=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 6 bought product: 1 from MachineID:14 dateTime:Mon Aug 08 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 5 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=6, 2=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 7 requested product: 10 at machine: 5
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 8 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {8=4, 9=4, 10=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 3 at machine: 8
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 11 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=2, 5=3, 6=3, 7=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 11
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 5
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 3=4, 10=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 7 at machine: 3
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 8 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {8=4, 9=4, 10=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 2 requested product: 4 at machine: 8
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=2, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 3 requested product: 9 at machine: 15
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 1 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=1, 7=1, 8=3, 9=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 4 bought product: 2 from MachineID:1 dateTime:Tue Aug 09 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 6 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=2, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 5 bought product: 4 from MachineID:6 dateTime:Tue Aug 09 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 14 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=4, 9=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 6 bought product: 1 from MachineID:14 dateTime:Tue Aug 09 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 7 bought product: 10 from MachineID:4 dateTime:Tue Aug 09 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 7 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 7
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=2, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 9 bought product: 3 from MachineID:15 dateTime:Tue Aug 09 19:01:45 EDT 2016
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 6
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 3=4, 10=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 4 at machine: 3
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 2 bought product: 8 from MachineID:9 dateTime:Wed Aug 10 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 13 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 3=4, 10=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 4 bought product: 2 from MachineID:3 dateTime:Wed Aug 10 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 6 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=1, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 8 at machine: 6
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 14 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 9=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 6 bought product: 1 from MachineID:14 dateTime:Wed Aug 10 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 7 bought product: 10 from MachineID:4 dateTime:Wed Aug 10 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 10 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {5=4, 6=3, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 9 at machine: 10
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 12 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {4=3, 8=3, 9=3, 10=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 12
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 7
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=4, 10=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 4 at machine: 3
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=3, 8=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 2 requested product: 4 at machine: 9
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=1, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 3 requested product: 9 at machine: 15
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 4 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=1}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 4 requested product: 3 at machine: 4
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=3, 8=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 5 at machine: 9
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 13 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 6 requested product: 1 at machine: 13
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=4, 10=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 7 bought product: 10 from MachineID:3 dateTime:Thu Aug 11 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 7 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 7
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=1, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 9 bought product: 3 from MachineID:15 dateTime:Thu Aug 11 19:01:45 EDT 2016
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 8
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 1 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=0, 7=1, 8=3, 9=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 5 at machine: 1
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=3, 8=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 2 requested product: 4 at machine: 9
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 3 requested product: 9 at machine: 15
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 2 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=4, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 4 requested product: 2 at machine: 2
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 7 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 6 at machine: 7
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 6 requested product: 1 at machine: 15
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=1}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 7 bought product: 10 from MachineID:4 dateTime:Fri Aug 12 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 10 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {5=4, 6=3, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 10
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 11 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=2, 5=3, 6=3, 7=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 9 requested product: 10 at machine: 11
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 9
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=4, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 4 at machine: 3
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 10 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {5=4, 6=3, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 2 bought product: 6 from MachineID:10 dateTime:Sat Aug 13 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 11 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=2, 5=3, 6=3, 7=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 3 requested product: 3 at machine: 11
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=4, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 4 bought product: 10 from MachineID:3 dateTime:Sat Aug 13 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 7 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 5 at machine: 7
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 12 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {4=3, 8=3, 9=3, 10=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 6 requested product: 3 at machine: 12
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=4, 10=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 7 bought product: 10 from MachineID:3 dateTime:Sat Aug 13 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 6 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=1, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 8 at machine: 6
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 13 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 10
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=4, 10=1}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 7 at machine: 3
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.36363637
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 6 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=1, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 2 bought product: 4 from MachineID:6 dateTime:Sun Aug 14 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 3 requested product: 9 at machine: 15
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.36666667
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 2 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=4, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 4 requested product: 8 at machine: 2
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.36263737
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 10 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {5=4, 6=2, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 5 bought product: 6 from MachineID:10 dateTime:Sun Aug 14 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 12 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {4=3, 8=3, 9=3, 10=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 6 requested product: 5 at machine: 12
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.3655914
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=0}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=3, 8=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 9
+2016-08-10 14:05:31 INFO  Simulation:84 - Efficiency Ratio: 0.3617021
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 12 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {4=3, 8=3, 9=3, 10=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 9 bought product: 10 from MachineID:12 dateTime:Sun Aug 14 19:01:45 EDT 2016
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 11
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=4, 10=1}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 4 at machine: 3
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 10 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {5=4, 6=1, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 2 requested product: 8 at machine: 10
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 12 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {4=3, 8=3, 9=3, 10=1}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 3 bought product: 4 from MachineID:12 dateTime:Mon Aug 15 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 2 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=4, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 4 bought product: 3 from MachineID:2 dateTime:Mon Aug 15 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 7 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 8 at machine: 7
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 13 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 6 requested product: 1 at machine: 13
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=4, 10=1}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 7 requested product: 4 at machine: 3
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=3, 8=2}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 8 bought product: 8 from MachineID:9 dateTime:Mon Aug 15 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 14 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=2, 9=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 9 requested product: 10 at machine: 14
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 12
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 2 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=3, 4=4, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 2 at machine: 2
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=3, 8=1}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 2 bought product: 6 from MachineID:9 dateTime:Tue Aug 16 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 14 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=2, 9=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 3 bought product: 9 from MachineID:14 dateTime:Tue Aug 16 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 3 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=3, 3=4, 10=1}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 4 bought product: 2 from MachineID:3 dateTime:Tue Aug 16 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 10 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {5=4, 6=1, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 4 at machine: 10
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 14 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=2, 9=5}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 6 requested product: 5 at machine: 14
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=0}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 6 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 4=0, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 6
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 14 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=2, 9=5}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 14
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 13
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 2 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=3, 4=4, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 6 at machine: 2
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 10 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {5=4, 6=1, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 2 requested product: 4 at machine: 10
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 12 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {4=2, 8=3, 9=3, 10=1}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 3 requested product: 1 at machine: 12
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 5 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=6, 2=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 4 requested product: 3 at machine: 5
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 7 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 6 at machine: 7
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 14 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=2, 9=5}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 6 requested product: 3 at machine: 14
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 5 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=6, 2=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 7 requested product: 3 at machine: 5
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 8 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {8=4, 9=4, 10=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 8 bought product: 10 from MachineID:8 dateTime:Wed Aug 17 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 9 requested product: 10 at machine: 15
+2016-08-10 14:05:31 DEBUG Simulation:64 - start round 14
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 5 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {1=6, 2=6}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 1 requested product: 4 at machine: 5
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 9 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=4, 6=2, 8=1}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 2 bought product: 6 from MachineID:9 dateTime:Thu Aug 18 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 3 requested product: 1 at machine: 15
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 2 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=3, 4=4, 5=4}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:31 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:31 INFO  Simulation:75 - Customer: 4 bought product: 3 from MachineID:2 dateTime:Thu Aug 18 19:01:45 EDT 2016
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 8 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {8=4, 9=4, 10=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 5 requested product: 7 at machine: 8
+2016-08-10 14:05:31 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 15 #####
+2016-08-10 14:05:31 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:31 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:31 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:31 INFO  Simulation:81 - Customer: 6 requested product: 1 at machine: 15
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 3 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=2, 3=4, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 7 bought product: 10 from MachineID:3 dateTime:Thu Aug 18 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=4, 9=4, 10=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 8 requested product: 3 at machine: 8
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=2, 5=3, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 10 at machine: 11
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 15
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 3 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=2, 3=4, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 1 requested product: 4 at machine: 3
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=1, 8=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 2 requested product: 4 at machine: 9
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 14 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=2, 9=5}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 3 requested product: 4 at machine: 14
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 3 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=2, 3=4, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 4 bought product: 2 from MachineID:3 dateTime:Fri Aug 19 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=1, 8=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 5 bought product: 6 from MachineID:9 dateTime:Fri Aug 19 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=2, 5=3, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 6 requested product: 4 at machine: 11
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 5 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=6, 2=6}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 7 requested product: 10 at machine: 5
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=0, 8=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 9
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 12 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {4=2, 8=3, 9=3, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 12
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 16
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 1 requested product: 5 at machine: 4
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=4, 9=4, 10=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 2 bought product: 8 from MachineID:8 dateTime:Sat Aug 20 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 12 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {4=2, 8=3, 9=3, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 3 requested product: 1 at machine: 12
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 3 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=1, 3=4, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 4 bought product: 2 from MachineID:3 dateTime:Sat Aug 20 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 7 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 5 requested product: 5 at machine: 7
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 6 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 4=0, 5=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 8 requested product: 8 at machine: 6
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 17
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 1 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=0, 7=1, 8=3, 9=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 1 requested product: 4 at machine: 1
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=0, 8=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 2 bought product: 8 from MachineID:9 dateTime:Sun Aug 21 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 13 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 3 requested product: 4 at machine: 13
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 5 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=6, 2=6}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 4 requested product: 10 at machine: 5
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 6 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 4=0, 5=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 5 bought product: 5 from MachineID:6 dateTime:Sun Aug 21 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=4, 5=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 7 requested product: 10 at machine: 2
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 6 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 4=0, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 8 requested product: 8 at machine: 6
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 18
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=4, 5=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 1 bought product: 5 from MachineID:2 dateTime:Mon Aug 22 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 10 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {5=4, 6=1, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 2 bought product: 6 from MachineID:10 dateTime:Mon Aug 22 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 12 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {4=2, 8=3, 9=3, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 3 requested product: 1 at machine: 12
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 5 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=6, 2=6}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 4 bought product: 2 from MachineID:5 dateTime:Mon Aug 22 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=0, 8=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 5 requested product: 4 at machine: 9
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 12 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {4=2, 8=3, 9=3, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 6 requested product: 1 at machine: 12
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 6 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 4=0, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 6
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 13 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 9 bought product: 10 from MachineID:13 dateTime:Mon Aug 22 19:01:45 EDT 2016
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 19
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=4, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 1 bought product: 4 from MachineID:2 dateTime:Tue Aug 23 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=0, 8=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 3 requested product: 4 at machine: 15
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=3, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 4 requested product: 2 at machine: 2
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=0, 8=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=2, 5=3, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 6 bought product: 1 from MachineID:11 dateTime:Tue Aug 23 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 3 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=0, 3=4, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=3, 9=4, 10=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 8 bought product: 10 from MachineID:8 dateTime:Tue Aug 23 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 14 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=2, 9=5}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 10 at machine: 14
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 20
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 5 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=6, 2=5}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 1 requested product: 5 at machine: 5
+2016-08-10 14:05:32 INFO  Simulation:84 - Efficiency Ratio: 0.3473054
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=0, 8=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 2 requested product: 4 at machine: 9
+2016-08-10 14:05:32 INFO  Simulation:84 - Efficiency Ratio: 0.3452381
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 13 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=2}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 3 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=0, 3=4, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 7 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 5 requested product: 6 at machine: 7
+2016-08-10 14:05:32 INFO  Simulation:84 - Efficiency Ratio: 0.34319526
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 13 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=2}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 10 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {5=4, 6=0, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 10
+2016-08-10 14:05:32 INFO  Simulation:84 - Efficiency Ratio: 0.34117648
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=1, 5=3, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 11
+2016-08-10 14:05:32 INFO  Simulation:84 - Efficiency Ratio: 0.33918127
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 21
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 1 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=0, 7=1, 8=3, 9=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 1 requested product: 6 at machine: 1
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 10 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {5=4, 6=0, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 2 requested product: 4 at machine: 10
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 12 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {4=2, 8=3, 9=3, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 3 bought product: 9 from MachineID:12 dateTime:Thu Aug 25 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 5 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=6, 2=5}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 4 requested product: 8 at machine: 5
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=0, 8=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=1, 5=3, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 6 requested product: 3 at machine: 11
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 7 requested product: 4 at machine: 4
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=3, 9=4, 10=2}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 8 bought product: 9 from MachineID:8 dateTime:Thu Aug 25 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 14 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=2, 9=5}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 14
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 22
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=3, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 1 requested product: 6 at machine: 2
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 10 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {5=4, 6=0, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 12 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {4=2, 8=3, 9=2, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 3 requested product: 1 at machine: 12
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 5 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=6, 2=5}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 4 bought product: 2 from MachineID:5 dateTime:Fri Aug 26 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 6 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 4=0, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 5 requested product: 6 at machine: 6
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 13 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=2}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 6 requested product: 1 at machine: 13
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=3, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 7 requested product: 10 at machine: 2
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=3, 9=3, 10=2}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 8 bought product: 8 from MachineID:8 dateTime:Fri Aug 26 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=1, 5=3, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 11
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 23
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 1 requested product: 5 at machine: 4
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 10 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {5=4, 6=0, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=1, 5=3, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 3 bought product: 1 from MachineID:11 dateTime:Sat Aug 27 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 4 requested product: 2 at machine: 4
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=2, 9=3, 10=2}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 5 requested product: 6 at machine: 8
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 14 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=2, 9=5}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 6 bought product: 1 from MachineID:14 dateTime:Sat Aug 27 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=3, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 7 requested product: 10 at machine: 2
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=2, 9=3, 10=2}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 8 bought product: 10 from MachineID:8 dateTime:Sat Aug 27 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 12 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {4=2, 8=3, 9=2, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 12
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 24
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=3, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 1 bought product: 4 from MachineID:2 dateTime:Sun Aug 28 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 7 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=4, 4=4, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 2 bought product: 4 from MachineID:7 dateTime:Sun Aug 28 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=0, 5=3, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 3 requested product: 4 at machine: 11
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=3, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 4 bought product: 9 from MachineID:4 dateTime:Sun Aug 28 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 6 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 4=0, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 5 requested product: 8 at machine: 6
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=0, 5=3, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 6 bought product: 5 from MachineID:11 dateTime:Sun Aug 28 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 5 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=6, 2=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 7 requested product: 10 at machine: 5
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=0, 8=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 9
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=0, 5=2, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 11
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 25
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=2, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 1 requested product: 7 at machine: 2
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=2, 9=3, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 2 requested product: 4 at machine: 8
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 13 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=2}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 3 requested product: 9 at machine: 13
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 5 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=6, 2=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 4 bought product: 2 from MachineID:5 dateTime:Mon Aug 29 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 9 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 6=0, 8=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 6 requested product: 1 at machine: 15
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 3 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=0, 3=4, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=2, 9=3, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 8 bought product: 8 from MachineID:8 dateTime:Mon Aug 29 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 10 at machine: 15
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 26
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=2, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 1 requested product: 7 at machine: 2
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 6 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 4=0, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 13 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=2}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 5 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=6, 2=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 4 requested product: 10 at machine: 5
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 6 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 4=0, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 5 requested product: 6 at machine: 6
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 13 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=3, 3=0, 8=3, 10=2}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 6 requested product: 1 at machine: 13
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=2, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=1, 9=3, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 8 bought product: 9 from MachineID:8 dateTime:Tue Aug 30 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 10 at machine: 15
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 27
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 3 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=0, 3=4, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=1, 9=2, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 2 requested product: 6 at machine: 8
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=0, 5=2, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:9
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 3 requested product: 9 at machine: 11
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=2, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 4 requested product: 2 at machine: 4
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 10 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {5=4, 6=0, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 14 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=1, 9=5}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 6 bought product: 1 from MachineID:14 dateTime:Wed Aug 31 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 3 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=0, 3=4, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 8 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {8=1, 9=2, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:8
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 8 bought product: 8 from MachineID:8 dateTime:Wed Aug 31 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 12 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {4=2, 8=3, 9=2, 10=1}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 12
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 28
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=3, 9=2, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 1 bought product: 7 from MachineID:4 dateTime:Thu Sep 01 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 7 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=4, 4=3, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 2 bought product: 4 from MachineID:7 dateTime:Thu Sep 01 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:4
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 3 requested product: 4 at machine: 15
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=2, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 4 requested product: 2 at machine: 2
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 7 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=4, 4=2, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 5 requested product: 6 at machine: 7
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 6 requested product: 1 at machine: 15
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 2 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=2, 4=2, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 7 requested product: 10 at machine: 2
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 7 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=4, 4=2, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 7
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 11 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=0, 5=2, 6=3, 7=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 9 requested product: 3 at machine: 11
+2016-08-10 14:05:32 DEBUG Simulation:64 - start round 29
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Joe machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=2, 9=2, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:7
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 1 bought product: 7 from MachineID:4 dateTime:Fri Sep 02 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Rob machineID: 10 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {5=4, 6=0, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:6
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bob machineID: 14 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=0, 9=5}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:1
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Harry machineID: 1 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {2=0, 7=1, 8=3, 9=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:2
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Gerald machineID: 6 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=4, 4=0, 5=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 5 bought product: 5 from MachineID:6 dateTime:Fri Sep 02 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Mary machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=3, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:5
+2016-08-10 14:05:32 DEBUG Simulation:21 - YES THE MACHINE HAS YOUR PRODUCT (and its stocked)!
+2016-08-10 14:05:32 INFO  Simulation:75 - Customer: 6 bought product: 5 from MachineID:15 dateTime:Fri Sep 02 19:01:45 EDT 2016
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Bertha machineID: 4 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {1=3, 7=1, 9=2, 10=0}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 7 requested product: 3 at machine: 4
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Patricia machineID: 10 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {5=4, 6=0, 7=4}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:10
+2016-08-10 14:05:32 DEBUG Simulation:30 - BOOOOOO! the machine doesn't have what you are looking for
+2016-08-10 14:05:32 INFO  Simulation:81 - Customer: 8 requested product: 10 at machine: 10
+2016-08-10 14:05:32 INFO  SimulatorService:203 - ##### CUSTOMER: Jenny machineID: 15 #####
+2016-08-10 14:05:32 DEBUG Simulation:16 - {3=0, 5=2, 6=3, 8=3}
+2016-08-10 14:05:32 DEBUG Simulation:18 - Product Chosen:3
+2016-08-10 14:05:32 DEBUG Simulation:26 - OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY

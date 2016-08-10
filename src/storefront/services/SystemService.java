@@ -83,36 +83,27 @@ public class SystemService {
 
 
 	public float calculateOverallEfficiencyRatio(){
+		int sales = dao.getTotalSales();
+		int reqs = dao.getTotalRequests();
 
-		//totalSales = SELECT COUNT(*) FROM purchases
-		//totalReqs = SELECT COUNT(*) FROM requests
-
-		//return totalSales/(totalSales + TotalReqs)
-		return 0;
+		return (float)sales/(sales + reqs);
 	}
 
 	public float calculateMachineEfficiencyRatio(int machineID){
+		int machineSales = dao.getMachineTotalSales(machineID);
+		int machineReqs = dao.getMachineTotalRequests(machineID);
 
-		//machSales = SELECT COUNT(*) FROM purchases WHERE machine_id= machineID
-		//machReqs = SELECT COUNT(*) FROM requests WHERE machine_id = machineID
-
-		//return machSales/(machSales + machReqs)
-		return 0;
+		return (float)machineSales/(machineSales + machineReqs);
 	}
 	
 	public int calculateMachineTotalSales(int machineID){
-
-		//machSales = SELECT COUNT(*) FROM purchases WHERE machine_id= machineID
-
-		//return machSales
-		return 0;
+		return dao.getMachineTotalSales(machineID);
 	}
 	
 	public float calculateProductScoreForArea(int productID, int areaID){
-		//totalAreaSales = SELECT DISTINCT COUNT(*) FROM purchases p, machine m WHERE m.machine_id = p.machine_id AND m.area_id = areaID
-		//productAreaSales = SELECT DISTINCT COUNT(*) FROM purchases p, machine m WHERE m.machine_id = p.machine_id AND p.product_id = productID AND m.area_id = areaID
+		int totalAreaSales = dao.getTotalSalesForArea(areaID);
+		int productAreaSales = dao.getProductSalesForArea(productID,areaID);
 
-		//return productAreaSales/totalAreaSales
-		return 0;
+		return  (float)productAreaSales/totalAreaSales;
 	}
 }

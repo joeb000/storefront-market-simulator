@@ -80,6 +80,9 @@ public abstract class Simulation {
 		int mockUnixDate=1470351705+(round*86400);
 		log.info("Customer: "+ cID + " requested product: " + pID +  " at machine: " + mID );
 		theSystemService.commitRequest(cID, pID, mID, mockUnixDate);
+		if (round%10==0){
+			log.info("Efficiency Ratio: "+theSystemService.calculateOverallEfficiencyRatio());
+		}
 	}
 	
 

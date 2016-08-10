@@ -1,6 +1,7 @@
 package storefront.services;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.apache.log4j.Logger;
 
@@ -105,5 +106,20 @@ public class SystemService {
 		int productAreaSales = dao.getProductSalesForArea(productID,areaID);
 
 		return  (float)productAreaSales/totalAreaSales;
+	}
+	
+	public void dumbRestockMachines() {
+		ArrayList<Machine> machLIst = retrieveAllMachines();
+		for (Machine machine : machLIst) {
+			int totalCapacity = mdao.getMachineCapacity(machine.getMachineID());
+
+			ArrayList<Integer> prodInMach = mdao.getProductsIDsInMachine(machine.getMachineID());
+			
+			int updateAmount = (totalCapacity/prodInMach.size());
+			for (Integer pID : prodInMach) {
+				mdao.dumbUpdateMachineStock(machine.getMachineID(), pID, updateAmount);
+			}
+			log.debug("Machine Restocked: "+ machine.getMachineID());
+		}
 	}
 }

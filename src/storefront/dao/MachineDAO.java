@@ -5,10 +5,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.apache.log4j.Logger;
+
 import storefront.entities.Machine;
 import storefront.helpers.DBConnection;
+import storefront.services.SystemService;
 
 public class MachineDAO {
+	final static Logger log = Logger.getLogger(MachineDAO.class);
 
 	public static String TABLE_MACHINE = "machine";
 
@@ -37,7 +41,7 @@ public class MachineDAO {
 		return retval;
 
 	}
-	
+
 	public ArrayList<Machine> readAllMachinesFromDB(){
 		ArrayList<Machine> machineList = new ArrayList<Machine>();
 		String sql = "SELECT * FROM " + TABLE_MACHINE;
@@ -56,7 +60,7 @@ public class MachineDAO {
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
-		
+
 		return machineList;
 	}
 
@@ -64,45 +68,74 @@ public class MachineDAO {
 		String sql = "UPDATE machine SET capacity=(capacity+" + amountBought + ") WHERE machine_id=" +machineID;
 		try {
 			DBConnection.getInstance().executeStatement(sql);
-		
+
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	public void updateProductBoughtInMachine(int productID, int machineID, int amountBought) {
 		String sql = "UPDATE product_machine SET stock=(stock-" + amountBought + ") WHERE machine_id=" +machineID + " AND product_id="+productID;
 		try {
 			DBConnection.getInstance().executeStatement(sql);
-		
+
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	public void updateMachineStockAddProductAmount(int machineID, int productID, int amount) {
 		String sql = "UPDATE product_machine SET stock=(stock+" + amount + ") WHERE machine_id=" +machineID + " AND product_id="+productID;
 		try {
 			DBConnection.getInstance().executeStatement(sql);
-		
+
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
-			
+
 		}
 	}
+	
+	public void dumbUpdateMachineStock(int machineID, int productID, int amount) {
+		String sql = "UPDATE product_machine SET stock=(" + amount + ") WHERE machine_id=" +machineID + " AND product_id="+productID;
+		try {
+			DBConnection.getInstance().executeStatement(sql);
+
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+
+		}
+	}
+	
+	
 	public void insertMachineProductAmount(int machineID, int productID, int amount) {
 		String sql = "INSERT INTO product_machine (product_id,machine_id,stock) VALUES (" + productID +"," + machineID +"," + amount + ")";
 		try {
 			DBConnection.getInstance().executeStatement(sql);
-		
+
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
-			
+
 		}
 	}
-	
+
+	public ArrayList<Integer> getProductsIDsInMachine(int machineID){
+		String sql = "SELECT * FROM product_machine WHERE machine_id=" + machineID;
+		ResultSet rs = null;
+		ArrayList<Integer> results = new ArrayList<Integer>();
+		try {
+			rs = DBConnection.getInstance().executeSelectStatement(sql);
+			while (rs.next()) {
+				results.add(rs.getInt("product_id"));
+			}
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		return results;
+	}
+
+
 	public HashMap<Integer,Integer> getProductsInMachine(int machineID){
 		String sql = "SELECT * FROM product_machine WHERE machine_id=" + machineID;
 		ResultSet rs = null;
@@ -116,6 +149,18 @@ public class MachineDAO {
 			e.printStackTrace();
 		}
 		return resultMap;
+	}
+
+	public int getMachineCapacity(int machineID) {
+		String sql = "SELECT capacity FROM machine WHERE machine_id = " + machineID;
+		try {
+			return DBConnection.getInstance().executeSingleValueStatement(sql);
+		} catch (ClassNotFoundException | SQLException e) {
+			e.printStackTrace();
+		}
+		log.error("Error retrieving stock of machine "+ machineID);
+		return 0;
+
 	}
 
 }

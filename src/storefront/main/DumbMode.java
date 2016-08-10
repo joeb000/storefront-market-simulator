@@ -8,6 +8,10 @@ public class DumbMode extends Simulation {
 
 	@Override
 	public void round(int roundIter) {
+		if (roundIter%restockPeriod==0){
+			theSystemService.dumbRestockMachines();
+		}
+		
 		for (Customer customer: customerList){
 			theSimService.randomlyAssignCustomerMachine(customer);
 			int currentMachineID = customer.getCurrentMachineID();
@@ -23,6 +27,7 @@ public class DumbMode extends Simulation {
 					recordTransaction(customer.getCustomerID(), productChosen, currentMachineID, roundIter);
 				}
 				else {
+					recordRequest(customer.getCustomerID(), productChosen, currentMachineID, roundIter);
 					log.debug("OH NO - THE PRODUCT IS OUT OF STOCK CURRENTLY");
 				}
 			}

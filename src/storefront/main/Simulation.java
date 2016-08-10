@@ -28,7 +28,27 @@ public abstract class Simulation {
 	protected ArrayList<Customer> customerList = new ArrayList<Customer>();
 	protected ArrayList<Machine> machineList = new ArrayList<Machine>();
 	protected ArrayList<Area> areaList = new ArrayList<Area>();
+	protected int restockPeriod;
+	protected int simulationRounds;
+
 		
+	public int getRestockPeriod() {
+		return restockPeriod;
+	}
+
+	public void setRestockPeriod(int restockPeriod) {
+		this.restockPeriod = restockPeriod;
+	}
+	
+	
+	public int getSimulationRounds() {
+		return simulationRounds;
+	}
+
+	public void setSimulationRounds(int simulationRounds) {
+		this.simulationRounds = simulationRounds;
+	}
+
 	public void initServices(){
 		if (new File("storefront.db").delete()){
 

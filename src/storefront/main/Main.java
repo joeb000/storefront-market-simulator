@@ -11,9 +11,9 @@ public class Main {
 
         PropertyConfigurator.configure(log4j_path);
         
-	//	Simulation theMain = filledMode();
+		Simulation theMain = filledMode();
 	//	Simulation theMain = dumbMode();
-		Simulation theMain = responsiveMode();
+	//	Simulation theMain = responsiveMode();
 
 		theMain.initServices();
 		theMain.loadTables();

@@ -13,6 +13,7 @@ import storefront.entities.Customer;
 import storefront.entities.Machine;
 import storefront.entities.Product;
 import storefront.helpers.DBConnection;
+import storefront.helpers.Utils;
 import storefront.services.SimulatorService;
 import storefront.services.SystemService;
 
@@ -94,6 +95,8 @@ public abstract class Simulation {
 		for (int i = 0; i < desiredRounds; i++) {
 			log.debug("+++++++++++++ Round " + i + " +++++++++++++");
 			round(i);
+			String s = i+"," + theSystemService.calculateOverallEfficiencyRatio();
+			Utils.writeToFile("output/efficiencyRatio.csv", s);
 		}
 		
 		log.info("### SIMULATION OVER ###");
